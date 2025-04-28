@@ -1,0 +1,851 @@
+/*recet css1*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*font*/
+/*font-family: "Belleza", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+body{ /*configuracion general de la pag*/
+    color: #725c3a;
+    text-transform:initial;
+    font-family: "Belleza", sans-serif;
+    /*color de fondo de pag*/
+    background-color: #e5e0d8;
+}
+
+
+/*HEADER*/
+
+header {
+    height: 80px;
+    margin-top: -10px;
+}
+
+header img { /*LOGO*/
+    height: 80px;
+    margin: 5px;
+
+}
+
+
+
+.container-fluid {
+    width: 100%;
+    background-color: rgb(133, 148, 118); 
+    font-size: 25px;
+    height: 80px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+header ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+/*MAIN*/ 
+
+
+/*estilo todos los h1*/
+h1 {
+    color: #b3b792;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4rem;
+    margin-bottom: 5px;
+    text-shadow:-9px 7px 5px rgba(0,0,0,0.76);
+    
+}
+
+
+/*MAIN*/ 
+
+
+/*Carrusel*/
+.carousel.slide img { 
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    
+}
+
+
+/*titulo y text de presentación*/
+.quienessomos {
+    text-align: center;
+    margin: 100px;
+}
+.presentacion {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+h2 {
+    font-size: 3rem;
+    margin: 30px;
+    text-decoration: underline;
+    text-decoration: solid;
+    
+}
+
+h3 {
+    margin: 30px;
+    font-size: 2rem;
+}
+
+
+h4 {
+    margin: 20px;
+}
+
+/*banner index*/
+.banner{
+    background-image: url(file:///C:/Users/PC/AppData/Local/Microsoft/Windows/INetCache/IE/ZWZJS4XP/DonDe%20Fluir_FINAL[1].pdf);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    color: #b3b792;
+    text-shadow:-9px 7px 5px rgba(0,0,0,0.76);
+    
+}
+
+
+/*seccion dentro de main index*/
+main section {
+    margin: 50px;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+    
+}
+
+/*imagenes de contenido*/
+main img {
+    width: 300px;
+}
+
+
+/*carrusel*/
+.imgcarrusel {
+    width: 700px;
+}
+    
+
+
+
+
+
+
+
+
+/*ESTETICA!!!!*/
+
+/*GRILLAS DE ESTETICA*/
+
+
+/*Grid COPAS*/
+
+.contenedor-grid.copas {
+    display: grid;
+
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "texto texto img"
+    "beneficios beneficios img"
+    "contradicciones contradicciones adicionales";
+
+    grid-template-columns: 30% 30% 30%;
+
+    grid-template-rows: 100px 80px 250px 250px ;
+
+
+    background-color: #b3b792;
+    
+}
+
+.ttcopas {
+    grid-area: titulo;
+    text-align: center;
+}
+
+.txtcopas {
+    grid-area: texto;
+}
+
+.bencopas {
+    grid-area: beneficios;
+}
+
+.concopas {
+    grid-area: contradicciones;
+}
+
+.infocopas {
+    grid-area: adicionales;
+}
+
+.imgcopas {
+    grid-area: img;
+    width: 450px;
+}
+
+
+/*Grid vacum*/
+
+.contenedor-grid.vacum {
+    display: grid;
+    grid-template-areas: 
+    "ttvacum ttvacum ttvacum"
+    "txtvacum txtvacum txtvacum"
+    "ben-vacum imgvacum con-vacum"
+    "infovacum infovacum infovacum";
+    grid-template-columns: 30% 35% 30%;
+    grid-template-rows: 100px 100px 350px 150px;
+
+
+}
+
+.ttvacum {
+    grid-area: ttvacum;
+    text-align: center;
+}
+
+.txtvacum {
+    grid-area: txtvacum;
+}
+
+.benvacum {
+    grid-area: ben-vacum;
+}
+
+.imgvacum {
+    grid-area: imgvacum;
+    width: 450px;
+    align-items: center;
+}
+
+.convacum {
+    grid-area: con-vacum;
+}
+
+.infovacum {
+    grid-area: infovacum;
+    text-align: center;
+}
+
+
+/*grid ELECTRODOS*/
+
+.contenedor-grid.electro {
+    display: grid;
+    grid-template-areas:
+    "tt tt tt"
+    "img txt txt"
+    "img ben con"
+    "img ben info" ;
+    grid-template-rows: 100px 100px 300px 250px;
+    grid-template-columns: 30% 35% 25%;
+
+    background-color: #b3b792;
+    width: 100%;
+    margin-left: 0%;
+}
+
+.ttelectro {
+    grid-area: tt;
+    text-align: center;
+
+}
+
+.txtelectro {
+    grid-area: txt;
+}
+
+.imgelectro {
+    grid-area: img;
+    
+}
+
+.benelectro { 
+    grid-area: ben;
+}
+
+.conelectro {
+    grid-area: con;
+}
+
+.infoelectro {
+    grid-area: info;
+}
+
+
+/*grid RADIOFRECUENCIA*/
+
+.contenedor-grid.radio {
+display: grid;
+grid-template-areas: 
+"tt tt"
+"txt img"
+"ben img"
+"info con";
+grid-template-columns: 55% 40%;
+grid-template-rows: 100px 150px 350px 250px;
+}
+
+.ttradio {
+    grid-area: tt;
+    text-align: center;
+}
+
+.txtradio {
+    grid-area: txt;
+}
+
+.imgradio { 
+    grid-area: img;
+}
+
+.benradio {
+    grid-area: ben;
+}
+ 
+.conradio { 
+    grid-area: con;
+}
+
+.inforadio {
+    grid-area: info;
+}
+
+
+/*grid DEPILACIÓN*/
+.contenedor-grid.depi {
+    display: grid;
+    grid-template-areas:
+    "tt tt tt tt" 
+    "txt1 txt1 txt2 txt2"
+    "ben img img con"
+    "info1 info1 info2 info2";
+    grid-template-columns: 30% 15% 15% 35%;
+    grid-template-rows: 100px 250px 400px 400px;
+
+    background-color: #b3b792;
+    align-items: center;
+    
+   
+}
+
+.ttdepi {
+    grid-area: tt;
+    text-align: center;
+}
+
+.txt1depi {
+    grid-area: txt1;
+    text-align: left;
+}
+
+.txt2depi {
+    grid-area: txt2;
+    text-align: left;
+}
+
+.bendepi {
+    grid-area: ben;
+}
+
+.condepi {
+    grid-area: con;
+}
+
+.imgdepi {
+    grid-area: img;
+    width: 300px;
+    background-color: #725c3a;
+    
+}
+
+.info1depi {
+    grid-area: info1;
+    text-align: left;
+    background-color: aquamarine;
+}
+
+.info2depi {
+    grid-area: info2;
+    text-align: left;
+    align-content: center;
+    width: 100%;
+    background-color: rosybrown;
+}
+
+
+/*grid masajes*/
+.contenedor-grid.masajes {
+    display: grid;
+    grid-template-areas: 
+    "tt tt tt"
+    "txt txt img"
+    "ben ben img"
+    "tipos tipos tipos";
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 100px 180px 300px 400px;
+}
+
+.ttmasajes {
+    grid-area: tt;
+}
+
+.txtmasajes {
+    grid-area: txt;
+}
+
+.imgmasajes {
+    grid-area: img;
+    width: 300px;
+    background-position: right;
+}
+
+/*.contenedor-flex.imgmasajes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}*/
+
+
+.tiposmasajes {
+    grid-area: tipos;
+}
+
+.benmasajes {
+    grid-area: ben;
+}
+
+.radiofacial {
+    background-color: #b3b792;
+}
+
+.lifting {
+    background-color: #b3b792;
+}
+
+.pestañasycejas {
+    background-color: #b3b792;
+}
+
+.manosypies {
+    padding: 20px;
+    padding-top: 5px;
+}
+
+
+
+
+
+/*ENTRENAMIENTO PERSONALIZADO!!!!*/
+
+/*margenes de textos en seccion de entrenamientos*/
+.entrenamientos p {
+    margin: 15px;
+}
+
+/*GRID ENTRENAMIENTO*/
+
+.contenedor-grid.entrenamiento {
+    display: grid;
+
+    grid-template-areas: 
+    "tt1 tt1"
+    "img1 txt1"
+    "tt2 img2"
+    "txt2 img2"
+    "tt3 tt3"
+    "img3 txt3";
+
+    grid-template-rows: 100px 450px 150px 450px 100px 300px;
+    grid-template-columns: 50% 40%;
+
+    background-color: rosybrown;
+    padding: 5%;
+}
+
+
+.ttentrenamiento {
+    grid-area: tt1;
+}
+
+.imgentrenamiento {
+    grid-area: img1;
+    padding: 5%;
+    width: 400px;
+    padding: 5%;
+}
+
+.txtentrenamiento {
+    grid-area: txt1;
+    text-align: center;
+}
+
+.ttyoga {
+    grid-area: tt2;
+}
+
+.imgyoga {
+    grid-area: img2;
+    width: 300px;
+    
+}
+
+.txtyoga {
+    grid-area: txt2;
+}
+
+.ttpilates {
+    grid-area: tt3;
+}
+
+.txtpilates {
+    grid-area: txt3;
+}
+
+.imgpilates {
+    grid-area: img3;
+    padding: 5%;
+    margin-bottom: 10%;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+/*posición iframe danza*/
+.videodanza {
+    margin-left: 30px;
+}
+
+
+
+/*imagenes de iconos de contactos*/
+.iconos {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ubicacion {
+    margin: 30px
+}
+
+.formulario { 
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.banner.footer {
+    background-image: url(./medios/logoblanco.jpg);
+    height: 100px;
+    background-position: 60% 50%;
+    background-size:contain;
+    width: 100%;
+    background-repeat: initial;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE!!!!*/
+/*MOBILE*/
+
+@media (max-width:480px) {
+
+
+
+    /*INDEX*/
+
+    header img { /*LOGO*/
+        height: 100px;
+        margin: 5px;
+    
+    }
+
+    h1 {
+        font-size: 3rem;
+      
+    }
+
+    h2 {
+        font-size: 2rem;
+        
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer img { 
+        height: 30px;
+        
+    }
+
+
+    /*ESTETICA*/
+
+    /*Grid COPAS*/
+
+.contenedor-grid.copas {
+   grid-template-areas: 
+    "titulo"
+    "beneficios"
+    "adicionales";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 300px 130px;
+
+}
+.txtcopas {
+    display: none;
+}
+.concopas {
+    display: none;
+}
+.imgcopas {
+    display: none;
+}
+
+/*grid vacumm*/
+.contenedor-grid.vacum {
+grid-template-areas: 
+    "ttvacum"
+    "txtvacum"
+    "ben-vacum";
+grid-template-columns: 1fr;
+grid-template-rows: 80px 130px 300px;
+ }
+.convacum {
+    display: none;
+}
+.infovacum {
+    display: none;
+}
+
+.imgvacum {
+    display: none;
+}
+
+
+/*grid ELECTRODOS*/
+
+.contenedor-grid.electro {
+    grid-template-areas:
+    "tt"
+    "ben";
+    grid-template-rows: 80px 400px 200px;
+    grid-template-columns: 1fr;
+}
+.txtelectro {
+    display: none;
+}
+.conelectro {
+    display: none;
+}
+.infoelectro {
+    display: none;
+}
+.imgelectro {
+    display: none;
+    
+}
+/*grid RADIOFRECUENCIA*/
+
+.contenedor-grid.radio {
+    grid-template-areas: 
+    "tt"
+    "txt "
+    "ben"
+    "info";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 150px 380px 150px;
+}
+
+.imgradio { 
+    display: none;
+}
+
+.conradio { 
+    display: none;
+}
+/*grid DEPILACIÓN*/
+.contenedor-grid.depi {
+    grid-template-areas:
+    "tt" 
+    "ben"
+    "info1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 250px 300px;
+}
+
+.txt1depi {
+    display: none;
+}
+
+.txt2depi {
+    display: none;
+}
+
+.condepi {
+    display: none;
+}
+
+.info2depi {
+    display: none;
+}
+.imgdepi {
+    display: none;
+}
+
+/*grid masajes*/
+.contenedor-grid.masajes {
+    grid-template-areas: 
+    "tt"
+    "ben"
+    "tipos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 300px 450px;
+}
+.txtmasajes {
+    display: none;
+}
+
+.imgmasajes {
+    display: none;
+}
+
+.manosypies img {
+    display: none;
+}
+
+/*entrenamiento*/
+.contenedor-grid.entrenamiento {
+    grid-template-areas: 
+    "tt1"
+    "img1"
+    "txt1"
+    "tt2"
+    "txt2"
+    "img2"
+    "tt3"
+    "img3"
+    "txt3";
+
+    grid-template-rows: 80px 300px 150px 80px 200px 400px 80px 300px 200px;
+    grid-template-columns: 1fr;
+    }
+
+.imgentrenamiento {
+    width: 300px;
+}
+
+.imgyoga {
+    width: 230px;
+}
+.imgpilates {
+    width: 250px;
+    
+}
+
+/*danza*/
+/*posición iframe danza*/
+.iframedanza {
+    width: 200px;
+}
+
+.ubicacion {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
