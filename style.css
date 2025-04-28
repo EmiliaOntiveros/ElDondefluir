@@ -19,13 +19,14 @@ body{ /*configuracion general de la pag*/
 /*HEADER*/
 
 header {
-    height: 80px;
+    height: 90px;
     margin-top: -10px;
+    
 }
 
 header img { /*LOGO*/
     height: 80px;
-    margin: 5px;
+    margin: 10px;
 
 }
 
@@ -35,7 +36,7 @@ header img { /*LOGO*/
     width: 100%;
     background-color: rgb(133, 148, 118); 
     font-size: 25px;
-    height: 80px;
+    height: 90px;
     
     
     display: flex;
@@ -95,8 +96,40 @@ h1 {
 .presentacion {
     text-align: center;
     margin-bottom: 100px;
+   
 }
 
+.grid-presentacion {
+    display: grid;
+
+    grid-template-areas: 
+    "txt1"
+    "txt2"
+    "txt3"
+    "txt4"
+    "txt5";
+    grid-template-rows: repeat(5.100px);
+    grid-template-columns: 90% ;
+
+    font-size: 1.5rem;
+    text-align:left;
+    margin-left: 13%;
+}
+.txt1pres {
+    grid-area: txt1;
+}
+.txt2pres {
+    grid-area: txt2;
+}
+.txt3pres {
+    grid-area: txt3;
+}
+.txt4pres {
+    grid-area: txt4;
+}
+.txt1pres {
+    grid-area: txt5;
+}
 
 h2 {
     font-size: 3rem;
@@ -175,7 +208,7 @@ main img {
 
     grid-template-columns: 30% 30% 30%;
 
-    grid-template-rows: 100px 80px 250px 250px ;
+    grid-template-rows: 100px 80px 330px 250px ;
 
 
     background-color: #b3b792;
@@ -218,9 +251,10 @@ main img {
     "txtvacum txtvacum txtvacum"
     "ben-vacum imgvacum con-vacum"
     "infovacum infovacum infovacum";
-    grid-template-columns: 30% 35% 30%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-rows: 100px 100px 350px 150px;
 
+    padding: 10px;
 
 }
 
@@ -262,12 +296,14 @@ main img {
     "img txt txt"
     "img ben con"
     "img ben info" ;
-    grid-template-rows: 100px 100px 300px 250px;
+    grid-template-rows: 100px 100px 450px 300px;
     grid-template-columns: 30% 35% 25%;
 
     background-color: #b3b792;
     width: 100%;
     margin-left: 0%;
+
+    padding: 10px;
 }
 
 .ttelectro {
@@ -308,7 +344,9 @@ grid-template-areas:
 "ben img"
 "info con";
 grid-template-columns: 55% 40%;
-grid-template-rows: 100px 150px 350px 250px;
+grid-template-rows: 100px 200px 450px 300px;
+
+padding: 10px;
 }
 
 .ttradio {
@@ -322,6 +360,7 @@ grid-template-rows: 100px 150px 350px 250px;
 
 .imgradio { 
     grid-area: img;
+    padding: 20px;
 }
 
 .benradio {
@@ -346,12 +385,12 @@ grid-template-rows: 100px 150px 350px 250px;
     "ben img img con"
     "info1 info1 info2 info2";
     grid-template-columns: 30% 15% 15% 35%;
-    grid-template-rows: 100px 250px 400px 400px;
+    grid-template-rows: 100px 250px 400px 350px;
 
     background-color: #b3b792;
     align-items: center;
     
-   
+    padding: 20px;
 }
 
 .ttdepi {
@@ -380,14 +419,14 @@ grid-template-rows: 100px 150px 350px 250px;
 .imgdepi {
     grid-area: img;
     width: 300px;
-    background-color: #725c3a;
+    
     
 }
 
 .info1depi {
     grid-area: info1;
     text-align: left;
-    background-color: aquamarine;
+    
 }
 
 .info2depi {
@@ -395,7 +434,7 @@ grid-template-rows: 100px 150px 350px 250px;
     text-align: left;
     align-content: center;
     width: 100%;
-    background-color: rosybrown;
+    
 }
 
 
@@ -408,7 +447,7 @@ grid-template-rows: 100px 150px 350px 250px;
     "ben ben img"
     "tipos tipos tipos";
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 100px 180px 300px 400px;
+    grid-template-rows: 100px 200px 400px 400px;
 }
 
 .ttmasajes {
@@ -442,19 +481,23 @@ grid-template-rows: 100px 150px 350px 250px;
 
 .radiofacial {
     background-color: #b3b792;
+    padding: 10px;
 }
 
 .lifting {
     background-color: #b3b792;
+    padding: 10px;
 }
 
 .pestañasycejas {
     background-color: #b3b792;
+    padding: 10px;
 }
 
 .manosypies {
     padding: 20px;
     padding-top: 5px;
+    margin: 15px;
 }
 
 
@@ -483,8 +526,6 @@ grid-template-rows: 100px 150px 350px 250px;
 
     grid-template-rows: 100px 450px 150px 450px 100px 300px;
     grid-template-columns: 50% 40%;
-
-    background-color: rosybrown;
     padding: 5%;
 }
 
