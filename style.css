@@ -238,7 +238,7 @@ main img {
 
 .imgcopas {
     grid-area: img;
-    width: 450px;
+    width: 480px;
 }
 
 
@@ -318,6 +318,7 @@ main img {
 
 .imgelectro {
     grid-area: img;
+    width: 350px;
     
 }
 
@@ -361,6 +362,7 @@ padding: 10px;
 .imgradio { 
     grid-area: img;
     padding: 20px;
+    width: 350px;
 }
 
 .benradio {
@@ -419,6 +421,7 @@ padding: 10px;
 .imgdepi {
     grid-area: img;
     width: 300px;
+    padding: 10px;
     
     
 }
@@ -460,8 +463,9 @@ padding: 10px;
 
 .imgmasajes {
     grid-area: img;
-    width: 300px;
+    width: 400px;
     background-position: right;
+    padding-left: 10px;
 }
 
 /*.contenedor-flex.imgmasajes {
@@ -654,11 +658,13 @@ padding: 10px;
 @media (max-width:480px) {
 
 
-
+    body {
+        width: 100%;
+    }
     /*INDEX*/
 
     header img { /*LOGO*/
-        height: 100px;
+        height: 70px;
         margin: 5px;
     
     }
