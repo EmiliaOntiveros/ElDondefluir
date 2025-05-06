@@ -1,0 +1,514 @@
+/*recet css1*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*font*/
+/*font-family: "Belleza", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+
+
+/*HEADER*/
+
+
+
+header 
+
+
+
+
+
+
+
+
+/*MAIN*/ 
+
+
+/*estilo todos los h1*/
+h1 {
+    color: #b3b792;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4rem;
+    margin-bottom: 5px;
+    text-shadow:-9px 7px 5px rgba(0,0,0,0.76);
+    
+}
+
+
+/*MAIN*/ 
+
+
+/*Carrusel*/
+
+
+
+
+
+
+
+
+h2 {
+    font-size: 3rem;
+    margin: 30px;
+    text-decoration: underline;
+    text-decoration: solid;
+    
+}
+
+h3 {
+    margin: 30px;
+    font-size: 2rem;
+}
+
+
+h4 {
+    margin: 20px;
+}
+
+/*banner index*/
+/*.banner{
+    background-image: url(file:///C:/Users/PC/AppData/Local/Microsoft/Windows/INetCache/IE/ZWZJS4XP/DonDe%20Fluir_FINAL[1].pdf);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    color: #b3b792;
+    text-shadow:-9px 7px 5px rgba(0,0,0,0.76);
+    
+}/*
+
+
+/*seccion dentro de main index*/
+main 
+
+/*imagenes de contenido*/
+main 
+
+
+/*c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ENTRENAMIENTO PERSONALIZADO!!!!*/
+
+/*margenes de textos en seccion de entrenamientos*/
+.entrenamientos p {
+    margin: 15px;
+}
+
+/*GRID ENTRENAMIENTO*/
+
+.contenedor-grid.entrenamiento {
+    display: grid;
+
+    grid-template-areas: 
+    "tt1 tt1"
+    "img1 txt1"
+    "tt2 img2"
+    "txt2 img2"
+    "tt3 tt3"
+    "img3 txt3";
+
+    grid-template-rows: 100px 450px 150px 450px 100px 300px;
+    grid-template-columns: 50% 40%;
+    padding: 5%;
+}
+
+
+.ttentrenamiento {
+    grid-area: tt1;
+}
+
+.imgentrenamiento {
+    grid-area: img1;
+    padding: 5%;
+    width: 400px;
+    padding: 5%;
+}
+
+.txtentrenamiento {
+    grid-area: txt1;
+    text-align: center;
+}
+
+.ttyoga {
+    grid-area: tt2;
+}
+
+.imgyoga {
+    grid-area: img2;
+    width: 300px;
+    
+}
+
+.txtyoga {
+    grid-area: txt2;
+}
+
+.ttpilates {
+    grid-area: tt3;
+}
+
+.txtpilates {
+    grid-area: txt3;
+}
+
+.imgpilates {
+    grid-area: img3;
+    padding: 5%;
+    margin-bottom: 10%;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+/*posición iframe danza*/
+.videodanza {
+    margin-left: 30px;
+}
+
+
+
+/*imagenes de iconos de contactos*/
+.iconos {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ubicacion {
+    margin: 30px
+}
+
+.formulario { 
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.banner.footer {
+    background-image: url(./medios/logoblanco.jpg);
+    height: 100px;
+    background-position: 60% 50%;
+    background-size:contain;
+    width: 100%;
+    background-repeat: initial;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE!!!!*/
+/*MOBILE*/
+
+@media (max-width:480px) {
+
+
+    body {
+        width: 100%;
+    }
+    /*INDEX*/
+
+    header img { /*LOGO*/
+        height: 70px;
+        margin: 5px;
+    
+    }
+
+        /*corrección de header en mobile*/
+    
+    .navbar.navbar-expand-lg.bg-body-tertiary {
+       
+        z-index: 100;
+    }
+    
+    .collapse.navbar-collapse {
+        background-color:#b3b792;
+        
+    }
+    
+
+
+
+
+
+    h1 {
+        font-size: 3rem;
+      
+    }
+
+    h2 {
+        font-size: 2rem;
+        
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer img { 
+        height: 30px;
+        
+    }
+
+
+    /*ESTETICA*/
+
+    /*Grid COPAS*/
+
+.contenedor-grid.copas {
+   grid-template-areas: 
+    "titulo"
+    "beneficios"
+    "adicionales";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 300px 130px;
+
+}
+.txtcopas {
+    display: none;
+}
+.concopas {
+    display: none;
+}
+.imgcopas {
+    display: none;
+}
+
+/*grid vacumm*/
+.contenedor-grid.vacum {
+grid-template-areas: 
+    "ttvacum"
+    "txtvacum"
+    "ben-vacum";
+grid-template-columns: 1fr;
+grid-template-rows: 80px 130px 300px;
+ }
+.convacum {
+    display: none;
+}
+.infovacum {
+    display: none;
+}
+
+.imgvacum {
+    display: none;
+}
+
+
+/*grid ELECTRODOS*/
+
+.contenedor-grid.electro {
+    grid-template-areas:
+    "tt"
+    "ben";
+    grid-template-rows: 80px 400px 200px;
+    grid-template-columns: 1fr;
+}
+.txtelectro {
+    display: none;
+}
+.conelectro {
+    display: none;
+}
+.infoelectro {
+    display: none;
+}
+.imgelectro {
+    display: none;
+    
+}
+/*grid RADIOFRECUENCIA*/
+
+.contenedor-grid.radio {
+    grid-template-areas: 
+    "tt"
+    "txt "
+    "ben"
+    "info";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 150px 380px 150px;
+}
+
+.imgradio { 
+    display: none;
+}
+
+.conradio { 
+    display: none;
+}
+/*grid DEPILACIÓN*/
+.contenedor-grid.depi {
+    grid-template-areas:
+    "tt" 
+    "ben"
+    "info1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 250px 300px;
+}
+
+.txt1depi {
+    display: none;
+}
+
+.txt2depi {
+    display: none;
+}
+
+.condepi {
+    display: none;
+}
+
+.info2depi {
+    display: none;
+}
+.imgdepi {
+    display: none;
+}
+
+/*grid masajes*/
+.contenedor-grid.masajes {
+    grid-template-areas: 
+    "tt"
+    "ben"
+    "tipos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 300px 450px;
+}
+.txtmasajes {
+    display: none;
+}
+
+.imgmasajes {
+    display: none;
+}
+
+.manosypies img {
+    display: none;
+}
+
+/*entrenamiento*/
+.contenedor-grid.entrenamiento {
+    grid-template-areas: 
+    "tt1"
+    "img1"
+    "txt1"
+    "tt2"
+    "txt2"
+    "img2"
+    "tt3"
+    "img3"
+    "txt3";
+
+    grid-template-rows: 80px 300px 150px 80px 200px 400px 80px 300px 200px;
+    grid-template-columns: 1fr;
+    }
+
+.imgentrenamiento {
+    width: 300px;
+}
+
+.imgyoga {
+    width: 230px;
+}
+.imgpilates {
+    width: 250px;
+    
+}
+
+/*danza*/
+/*posición iframe danza*/
+.iframedanza {
+    width: 200px;
+}
+
+.ubicacion {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
