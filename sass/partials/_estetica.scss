@@ -1,0 +1,253 @@
+/*ESTETICA!!!!*/
+/*GRILLAS DE ESTETICA*/
+main {
+    .presentacion {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    /*Grid COPAS*/
+
+    .contenedor-grid.copas {
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "texto texto img"
+        "beneficios beneficios img"
+        "contradicciones contradicciones adicionales";
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 100px 80px 330px 250px ;
+        background-color: #b3b792;
+        .ttcopas {
+            grid-area: titulo;
+            text-align: center;
+        }
+        .txtcopas {
+                grid-area: texto;
+        }
+        .bencopas {
+                grid-area: beneficios;
+        }
+        .concopas {
+                grid-area: contradicciones;
+        }
+        .infocopas {
+                grid-area: adicionales;
+        }
+        .imgcopas {
+                grid-area: img;
+                width: 480px;
+        }
+    }
+        
+        /*Grid vacum*/
+        .contenedor-grid.vacum {
+            display: grid;
+            grid-template-areas: 
+            "ttvacum ttvacum ttvacum"
+            "txtvacum txtvacum txtvacum"
+            "ben-vacum imgvacum con-vacum"
+            "infovacum infovacum infovacum";
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 100px 100px 350px 150px;
+            padding: 10px;
+            .ttvacum {
+                grid-area: ttvacum;
+                text-align: center;
+            }
+    
+            .txtvacum {
+                grid-area: txtvacum;
+            }
+    
+            .benvacum {
+                grid-area: ben-vacum;
+            }
+    
+            .imgvacum {
+                grid-area: imgvacum;
+                width: 450px;
+                align-items: center;
+            }
+    
+            .convacum {
+                grid-area: con-vacum;
+            }
+    
+            .infovacum {
+                grid-area: infovacum;
+                text-align: center;
+            }
+        }
+        /*grid ELECTRODOS*/
+        .contenedor-grid.electro {
+            display: grid;
+            grid-template-areas:
+            "tt tt tt"
+            "img txt txt"
+            "img ben con"
+            "img ben info" ;
+            grid-template-rows: 100px 100px 450px 300px;
+            grid-template-columns: 30% 35% 25%;
+
+            background-color: #b3b792;
+            width: 100%;
+            margin-left: 0%;
+            padding: 10px;
+
+            .ttelectro {
+                grid-area: tt;
+                text-align: center;
+            }
+            .txtelectro {
+                grid-area: txt;
+            }   
+            .imgelectro {
+                grid-area: img;
+                width: 350px;               
+            }   
+            .benelectro { 
+                grid-area: ben;
+            }   
+            .conelectro {
+                grid-area: con;
+            }   
+            .infoelectro {
+                grid-area: info;
+            }
+        }
+
+        /*grid RADIOFRECUENCIA*/
+
+        .contenedor-grid.radio {
+            display: grid;
+            grid-template-areas: 
+            "tt tt"
+            "txt img"
+            "ben img"
+            "info con";
+            grid-template-columns: 55% 40%;
+            grid-template-rows: 100px 200px 450px 300px;
+            padding: 10px;
+            .ttradio {
+                grid-area: tt;
+                text-align: center;
+            }
+            .txtradio {
+                grid-area: txt;
+            }
+            .imgradio { 
+                grid-area: img;
+                padding: 20px;
+                width: 350px;
+            }
+            .benradio {
+                grid-area: ben;
+            }            
+            .conradio { 
+                grid-area: con;
+            }
+            .inforadio {
+                grid-area: info;
+            }
+        }
+
+        /*grid DEPILACIÓN*/
+        .contenedor-grid.depi {
+            display: grid;
+            grid-template-areas:
+            "tt tt tt tt" 
+            "txt1 txt1 txt2 txt2"
+            "ben img img con"
+            "info1 info1 info2 info2";
+            grid-template-columns: 30% 15% 15% 35%;
+            grid-template-rows: 100px 250px 400px 350px;
+
+            background-color: #b3b792;
+            align-items: center;
+            padding: 20px;
+
+            .ttdepi {
+                grid-area: tt;
+                text-align: center;
+            }    
+            .txt1depi {
+                grid-area: txt1;
+                text-align: left;
+            }  
+            .txt2depi {
+                grid-area: txt2;
+                text-align: left;
+            }   
+            .bendepi {
+                grid-area: ben;
+            }   
+            .condepi {
+                grid-area: con;
+            }    
+            .imgdepi {
+                grid-area: img;
+                width: 300px;
+                padding: 10px;                
+            }   
+            .info1depi {
+                grid-area: info1;
+                text-align: left;              
+            }   
+            .info2depi {
+                grid-area: info2;
+                text-align: left;
+                align-content: center;
+                width: 100%;               
+            }
+        }
+        /*grid masajes*/
+        .contenedor-grid.masajes {
+            display: grid;
+            grid-template-areas: 
+            "tt tt tt"
+            "txt txt img"
+            "ben ben img"
+            "tipos tipos tipos";
+            grid-template-columns: 25% 25% 50%;
+            grid-template-rows: 100px 200px 400px 400px;
+
+            .ttmasajes {
+                grid-area: tt;
+            }    
+            .txtmasajes {
+                grid-area: txt;
+            }   
+            .imgmasajes {
+                grid-area: img;
+                width: 400px;
+                background-position: right;
+                padding-left: 10px;
+            }
+            .tiposmasajes {
+                grid-area: tipos;
+            }   
+            .benmasajes {
+                grid-area: ben;
+            }
+        }
+        .radiofacial {
+            background-color: #b3b792;
+            padding: 10px;
+        }
+
+        .lifting {
+            background-color: #b3b792;
+            padding: 10px;
+        }
+
+        .pestañasycejas {
+            background-color: #b3b792;
+            padding: 10px;
+        }
+
+        .manosypies {
+            padding: 20px;
+            padding-top: 5px;
+            margin: 15px;
+        }
+}

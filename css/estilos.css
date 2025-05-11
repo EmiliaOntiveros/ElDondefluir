@@ -8,22 +8,13 @@ body {
   background-color: #e5e0d8;
 }
 
-header {
-  height: 90px;
-  margin-top: -10px;
-}
-header .container-fluid {
+footer .banner.footer {
+  background-image: url(./medios/logoblanco.jpg);
+  height: 100px;
+  background-position: 60% 50%;
+  background-size: contain;
   width: 100%;
-  background-color: rgb(133, 148, 118);
-  font-size: 25px;
-  height: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-header .container-fluid img { /*LOGO*/
-  height: 80px;
-  margin: 10px;
+  background-repeat: initial;
 }
 
 main {
@@ -281,6 +272,22 @@ main .pestañasycejas {
 main .manosypies {
   padding: 20px;
   padding-top: 5px;
+  margin: 15px;
+}
+
+main .videodanza {
+  margin-left: 30px;
+}
+
+main .iconos {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main .ubicacion {
+  margin: 30px;
+}
+main .formulario {
   margin: 15px;
 }
 
