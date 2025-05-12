@@ -1,3 +1,4 @@
+@use "./variables" as *;
 main { 
     background-color: aliceblue;
     
@@ -12,6 +13,7 @@ main {
     .quienessomos {
         text-align: center;
         margin: 100px;
+        transition: 2s;
         .grid-presentacion {
         display: grid;
         grid-template-areas: 
@@ -42,6 +44,10 @@ main {
         .txt1pres {
         grid-area: txt5;
         }
+    }
+    .quienessomos:hover {
+        color: $verdeoscuro;
+        transform: scale(1.5,1.5) rotate(-15deg);
     }
     section {
         margin: 50px;

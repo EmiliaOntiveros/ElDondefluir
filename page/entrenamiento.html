@@ -16,6 +16,9 @@
      
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!--AOS (tarjetas)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -59,9 +62,9 @@
     <!--cuerpo pag-->
     <main>
         <!--presentación-->
-        <H1>ENTRENAMIENTO PERSONALIZADOS</H1>
+        <h1>ENTRENAMIENTO PERSONALIZADOS</h1>
         <!--banner de entrenamiento-->
-        <p class="presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis sunt eligendi velit labore, quibusdam quod reiciendis eaque expedita, soluta distinctio autem ullam laboriosam in. Quaerat earum esse quo expedita.</p>
+        <p data-aos="fade-right" class="presentacion">En el Don de Fluir, fusionamos entrenamiento funcional, yoga y pilates para ofrecerte una experiencia integral de bienestar. No importa tu edad o condición física: aquí encontrarás un espacio para moverte con propósito, conectar con tu cuerpo y superar tus límites, siempre guiado por profesionales.</p>
 
         <h2>Nuestas actividades</h2>
         
@@ -84,19 +87,28 @@
                 
                 <!--<select name="#entrenamientofuncional" id="entrenamientofuncional"></select>-->
                 <h3 class="ttentrenamiento">Entrenamiento funcional</h2><!--entrenamiento funcional-->
-                <p class="txtentrenamiento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui voluptas alias tempora exercitationem sint voluptates aut esse, provident sapiente optio ipsa odit voluptatibus fuga cumque unde labore asperiores vitae.</p>
+                <p class="txtentrenamiento">Diseñado para mejorar tu vida diaria:
+                    Movimientos inteligentes: Ejercicios que imitan gestos cotidianos.
+                    Fuerza útil: Mejora tu resistencia, equilibrio y agilidad.
+                    Adaptable: Desde principiantes hasta atletas avanzados.</p>
 
                 <img class="imgentrenamiento" src="../medios/entrenamiento funcional.jpg" alt="entrenamientopersonalizado">
 
                 <!--<select name="#yoga" id="yoga"></select>-->
                 <h3 class="ttyoga">Yoga</h2> <!--Yoga-->
-                <p class="txtyoga">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, repudiandae! Veritatis, hic non. Dolorem molestiae perspiciatis doloremque soluta alias tenetur ipsam veniam. Voluptatem laborum harum tempora, minus aliquam incidunt. Recusandae.</p>
+                <p class="txtyoga">Para cultivar cuerpo y mente:
+                    Variantes disponibles: Hatha, Vinyasa, Yoga Restaurativo.
+                    Beneficios: Flexibilidad, reducción del estrés, conciencia postural.
+                    Enfoque: Clases para todos los niveles (¡sin estereotipos!).</p>
 
                 <img class="imgyoga" src="../medios/yoga.jpg" alt="yoga">
 
                 <!--<select name="#pilates" id="pilates"></select>-->
                 <h3 class="ttpilates">Pilates</h2> <!--pilates--> 
-                <p class="txtpilates">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit asperiores aspernatur fugiat soluta aperiam nam labore eum eius mollitia laborum, recusandae dicta, quas sunt possimus. Eveniet ab suscipit eius.</p>
+                <p class="txtpilates">La elección perfecta para:
+                    Fortalecer el core (centro de poder del cuerpo).  <!--arreglar textos de entrenamiento, pilates y yoga-->   
+                    Mejorar postura y aliviar tensiones musculares.
+                    Recuperación de lesiones (guiada por especialistas).</p>
                 <img class="imgpilates" src="../medios/pilates.jpg" alt="pilates">
             </section>
 
@@ -131,8 +143,10 @@
 
 
 
-<!--boostrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

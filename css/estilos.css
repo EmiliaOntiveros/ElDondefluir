@@ -38,6 +38,7 @@ main .carousel.slide img {
 main .quienessomos {
   text-align: center;
   margin: 100px;
+  transition: 2s;
 }
 main .quienessomos .grid-presentacion {
   display: grid;
@@ -62,6 +63,10 @@ main .quienessomos .txt4pres {
 }
 main .quienessomos .txt1pres {
   grid-area: txt5;
+}
+main .quienessomos:hover {
+  color: #859476;
+  transform: scale(1.5, 1.5) rotate(-15deg);
 }
 main section {
   margin: 50px;
@@ -291,6 +296,9 @@ main section .manosypies {
   margin: 15px;
 }
 
+main .presentacion {
+  border: #859476 solid 20px;
+}
 main .videodanza {
   margin-left: 30px;
 }
