@@ -1,3 +1,18 @@
+@use './partials/variables' as *;
+
+@use './partials/headerfooter' as *;
+
+@use './partials/index' as *;
+@use './partials/estetica' as *;
+@use './partials/danza' as *;
+@use './partials/entrenamiento' as *;
+@use './partials/contactos' as *;
+
+@use './partials/mediaq' as *;
+
+
+
+
 body  /*configuracion general de la pag*/ {
     background-color: aliceblue;
     color: #725c3a;
@@ -6,11 +21,6 @@ body  /*configuracion general de la pag*/ {
     /*color de fondo de pag*/
     background-color: #e5e0d8; 
 }
-@import "./partials/headerfooter";
-@import "./partials/index";
-@import "./partials/estetica";
-@import "./partials/danza";
-@import "./partials/contactos";
 
 
 

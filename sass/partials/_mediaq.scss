@@ -1,0 +1,204 @@
+@media (max-width:480px) {
+    //INDEX
+    body {
+        width: 100%;
+        header {
+            .zoa { //correccion de header en mobile
+                z-index: 100;
+                img { /*LOGO*/
+                    height: 70px;
+                    margin: 5px;
+                }
+                .milo {
+                    background-color:#b3b792;
+                }
+            }
+            
+        }
+        main {
+            .carruselindex {
+                margin: 0%;
+            }
+            h1 {
+                font-size: 2.5rem;
+                text-align: center;      
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            padding: 20px;
+
+            //ESTETICA
+            section {
+                margin: 10px;
+                .contenedor-grid.copas {
+                    grid-template-areas: 
+                    "titulo"
+                    "beneficios"
+                    "adicionales";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 80px 300px 130px;
+                    .txtcopas {
+                        display: none;
+                    }
+                    .concopas {
+                        display: none;
+                    }
+                    .imgcopas {
+                        display: none;
+                    }
+                } 
+                .contenedor-grid.vacum {
+                    grid-template-areas: 
+                    "ttvacum"
+                    "txtvacum"
+                    "ben-vacum";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 130px 300px;
+                    .convacum {
+                        display: none;
+                    }
+                    .infovacum {
+                        display: none;
+                    }
+                    .imgvacum {
+                        display: none;
+                    }
+                }
+                .contenedor-grid.electro {
+                    grid-template-areas:
+                    "tt"
+                    "ben";
+                    grid-template-rows: 80px 400px 200px;
+                    grid-template-columns: 1fr;
+                    .txtelectro {
+                    display: none;
+                    }
+                    .conelectro {
+                        display: none;
+                    }
+                    .infoelectro {
+                        display: none;
+                    }
+                    .imgelectro {
+                        display: none;                   
+                    }
+                }
+                .contenedor-grid.radio {
+                    grid-template-areas: 
+                    "tt"
+                    "txt "
+                    "ben"
+                    "info";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 150px 380px 150px;
+                    .imgradio { 
+                        display: none;
+                    }
+                    .conradio { 
+                        display: none;
+                    }
+                }
+                .contenedor-grid.depi {
+                    grid-template-areas:
+                    "tt" 
+                    "ben"
+                    "info1";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 250px 300px;
+                    .txt1depi {
+                        display: none;
+                    }
+                    .txt2depi {
+                        display: none;
+                    }
+                    .condepi {
+                        display: none;
+                    }
+                    .info2depi {
+                        display: none;
+                    }
+                    .imgdepi {
+                        display: none;
+                    }
+                }
+                .contenedor-grid.masajes {
+                    grid-template-areas: 
+                    "tt"
+                    "ben"
+                    "tipos";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 300px 450px;
+                    .txtmasajes {
+                        display: none;
+                    }
+                    .imgmasajes {
+                        display: none;
+                    }
+                    .manosypies img {
+                        display: none;
+                    }
+                }
+            }
+           
+            //ENTRENAMIENTO
+            .contenedor-grid.entrenamiento {
+                grid-template-areas: 
+                "tt1"
+                "img1"
+                "txt1"
+                "tt2"
+                "txt2"
+                "img2"
+                "tt3"
+                "img3"
+                "txt3";
+                grid-template-rows: 80px 300px 150px 80px 200px 450px 80px 300px 200px;
+                grid-template-columns: 1fr;
+                .imgentrenamiento {
+                    width: 300px;
+                }
+                .imgyoga {
+                    width: 230px;
+                }
+                .imgpilates {
+                    width: 250px;                   
+                }
+            }
+            //DANZA
+            h1 {
+                .videodanza { //ARREGLAR IFRAME DANZA Y UBICACION
+                    width: 100px;
+        
+                    .iframedanza {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                }               
+                p {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .ubicacion {
+                    width: 250px;
+                }
+            }
+
+        }
+        footer {
+            img { 
+                height: 30px;
+            }
+        }
+    }
+}
