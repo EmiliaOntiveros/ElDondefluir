@@ -1,18 +1,23 @@
+@use "./variables" as *;
 header {
     height: 90px;
     margin-top: -10px;
-    .container-fluid {
-        width: 100%;
-        background-color: #b3b792;
-        font-size: 25px;
-        height: 90px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        img { /*LOGO*/
-            height: 80px;
-            margin: 10px;
+    .zoa {
+
+    
+        .papa {
+            width: 100%;
+            background-color: #b3b792;
+            font-size: 25px;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .mama { /*LOGO*/
+                width: 95px;
+                margin: 10px;
             }
+        }
     }
 }
 footer {

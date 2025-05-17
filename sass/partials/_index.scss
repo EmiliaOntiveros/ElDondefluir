@@ -5,7 +5,7 @@ main {
     .carousel.slide{
         img { 
         width: 100%;
-        height: 400px;
+        height: 450px;
         background-size: cover;
         }
     }
@@ -14,49 +14,123 @@ main {
         text-align: center;
         margin: 100px;
         transition: 2s;
-        .grid-presentacion {
-        display: grid;
-        grid-template-areas: 
-        "txt1"
-        "txt2"
-        "txt3"
-        "txt4"
-        "txt5";
-        grid-template-rows: repeat(5.100px);
-        grid-template-columns: 90% ;
-    
-        font-size: 1.5rem;
-        text-align:left;
-        margin-left: 13%;
-        }
-        .txt1pres {
-        grid-area: txt1;
-        }
-        .txt2pres {
-        grid-area: txt2;
-        }
-        .txt3pres {
-        grid-area: txt3;
-        }
-        .txt4pres {
-        grid-area: txt4;
-        }
-        .txt1pres {
-        grid-area: txt5;
-        }
+        font-size: 4rem;
     }
     .quienessomos:hover {
         color: $verdeoscuro;
         transform: scale(1.5,1.5) rotate(-15deg);
     }
-    section {
-        @include margenes (5px,1.5rem);
-        margin: 50px;
-        margin-bottom: 100px;
+    div {
         
-        img {
-            width: 300px;
+        .p.index {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 15px;
+            font-size: 1.5rem;
+            background-color: $verdeclaro;
         }
+        .p.index1 {
+            font-size: 2rem;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 15px;
+            
+        }
+    }
+    /*nuestros servicios*/
+    /*estetica*/
+    .h2index {
+        font-size: 2rem;
+        margin: 40px;
+        }
+
+    .div.servicios.index {
+        padding: 30px;
+        .h3index {
+            padding: 30px;
+        }
+        a {
+            color: $marron;
+            font-size: 1.9rem;
+            margin-top: 25px;
+        }
+        .contenedor.grid.index {
+            display: grid;
+            grid-template-areas: 
+            "presentacion presentacion presentacion"
+            "copas vacum depi"
+            "radio electro masajes"
+            "punta lifting manicura";
+            grid-template-rows: 120px 100px 100px 100px ;
+            grid-template-columns: 30% 42% 30%;
+            text-align: center;
+            background-color: $verdeclaro;
+            padding-right: 50px;
+            .p.estetica.index {
+                grid-area: presentacion;
+                font-size: 1.7rem;
+            }
+            .p.estetica.index1 {
+                grid-area: copas;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index2 {
+                grid-area: vacum;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index3 {
+                grid-area: depi;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index4 {
+                grid-area: radio;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index5 {
+                grid-area: electro;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index6 {
+                grid-area: masajes;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index7 {
+                grid-area: punta;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index8 {
+                grid-area: lifting;
+                font-size: 1.6rem;
+            }
+            .p.estetica.index9 {
+                grid-area: manicura;
+                font-size: 1.6rem;
+            }
+        }
+        /*danza*/
+
+        .danzaindex {
+            background-color: $verdeclaro;
+            .p.danza.index {
+                font-size: 1.6rem;
+            }
+            .p.danza.index.tt {
+                text-align: center;
+            }
+        }
+        /*entrenamientos*/
+        .entrenamientoindex {
+            background-color: $verdeclaro;
+            .p.entrenamiento.index.tt {
+                text-align: center;
+            }
+            .p.entrenamiento.index {
+                font-size: 1.6rem;
+            }
+        }
+        
+        
+        
     }
 
 }

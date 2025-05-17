@@ -3,7 +3,7 @@ header {
   height: 90px;
   margin-top: -10px;
 }
-header .container-fluid {
+header .zoa .papa {
   width: 100%;
   background-color: #b3b792;
   font-size: 25px;
@@ -12,8 +12,8 @@ header .container-fluid {
   flex-direction: row;
   justify-content: space-between;
 }
-header .container-fluid img { /*LOGO*/
-  height: 80px;
+header .zoa .papa .mama { /*LOGO*/
+  width: 95px;
   margin: 10px;
 }
 
@@ -29,53 +29,120 @@ footer .banner.footer {
 main {
   background-color: aliceblue;
   /*titulo y text de presentación*/
+  /*nuestros servicios*/
+  /*estetica*/
 }
 main .carousel.slide img {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-size: cover;
 }
 main .quienessomos {
   text-align: center;
   margin: 100px;
   transition: 2s;
-}
-main .quienessomos .grid-presentacion {
-  display: grid;
-  grid-template-areas: "txt1" "txt2" "txt3" "txt4" "txt5";
-  grid-template-rows: repeat(5.1px);
-  grid-template-columns: 90%;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 13%;
-}
-main .quienessomos .txt1pres {
-  grid-area: txt1;
-}
-main .quienessomos .txt2pres {
-  grid-area: txt2;
-}
-main .quienessomos .txt3pres {
-  grid-area: txt3;
-}
-main .quienessomos .txt4pres {
-  grid-area: txt4;
-}
-main .quienessomos .txt1pres {
-  grid-area: txt5;
+  font-size: 4rem;
 }
 main .quienessomos:hover {
   color: #859476;
   transform: scale(1.5, 1.5) rotate(-15deg);
 }
-main section {
-  padding: 5px;
+main div .p.index {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
   font-size: 1.5rem;
-  margin: 50px;
-  margin-bottom: 100px;
+  background-color: #b3b792;
 }
-main section img {
-  width: 300px;
+main div .p.index1 {
+  font-size: 2rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+main .h2index {
+  font-size: 2rem;
+  margin: 40px;
+}
+main .div.servicios.index {
+  padding: 30px;
+  /*danza*/
+  /*entrenamientos*/
+}
+main .div.servicios.index .h3index {
+  padding: 30px;
+}
+main .div.servicios.index a {
+  color: #725c3a;
+  font-size: 1.9rem;
+  margin-top: 25px;
+}
+main .div.servicios.index .contenedor.grid.index {
+  display: grid;
+  grid-template-areas: "presentacion presentacion presentacion" "copas vacum depi" "radio electro masajes" "punta lifting manicura";
+  grid-template-rows: 120px 100px 100px 100px;
+  grid-template-columns: 30% 42% 30%;
+  text-align: center;
+  background-color: #b3b792;
+  padding-right: 50px;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index {
+  grid-area: presentacion;
+  font-size: 1.7rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index1 {
+  grid-area: copas;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index2 {
+  grid-area: vacum;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index3 {
+  grid-area: depi;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index4 {
+  grid-area: radio;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index5 {
+  grid-area: electro;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index6 {
+  grid-area: masajes;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index7 {
+  grid-area: punta;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index8 {
+  grid-area: lifting;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .contenedor.grid.index .p.estetica.index9 {
+  grid-area: manicura;
+  font-size: 1.6rem;
+}
+main .div.servicios.index .danzaindex {
+  background-color: #b3b792;
+}
+main .div.servicios.index .danzaindex .p.danza.index {
+  font-size: 1.6rem;
+}
+main .div.servicios.index .danzaindex .p.danza.index.tt {
+  text-align: center;
+}
+main .div.servicios.index .entrenamientoindex {
+  background-color: #b3b792;
+}
+main .div.servicios.index .entrenamientoindex .p.entrenamiento.index.tt {
+  text-align: center;
+}
+main .div.servicios.index .entrenamientoindex .p.entrenamiento.index {
+  font-size: 1.6rem;
 }
 
 /*ESTETICA!!!!*/
@@ -297,7 +364,7 @@ main section .manosypies {
   margin: 15px;
 }
 
-main .presentacion {
+main .presentaciondanza {
   border: #859476 solid 20px;
 }
 main .videodanza {
