@@ -149,13 +149,14 @@ main .div.servicios.index .entrenamientoindex .p.entrenamiento.index {
 /*GRILLAS DE ESTETICA*/
 main {
   /*Grid COPAS*/
+  /*section faciales*/
 }
 main h1 {
   padding-top: 10px;
 }
 main .presentacion {
   text-align: center;
-  margin: 80px;
+  margin: 30px;
   font-size: 1.6rem;
 }
 main section {
@@ -166,12 +167,16 @@ main section {
   /*grid DEPILACIÓN*/
   /*grid masajes*/
 }
+main section p {
+  padding: 5px;
+}
 main section .contenedor-grid.copas {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "texto texto img" "beneficios beneficios img" "contradicciones contradicciones adicionales";
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 100px 80px 330px 250px;
+  grid-template-rows: 100px 80px 380px 250px;
   background-color: #b3b792;
+  padding-left: 20px;
 }
 main section .contenedor-grid.copas .ttcopas {
   grid-area: titulo;
@@ -182,6 +187,7 @@ main section .contenedor-grid.copas .txtcopas {
 }
 main section .contenedor-grid.copas .bencopas {
   grid-area: beneficios;
+  padding-top: 10px;
 }
 main section .contenedor-grid.copas .concopas {
   grid-area: contradicciones;
@@ -197,7 +203,7 @@ main section .contenedor-grid.vacum {
   display: grid;
   grid-template-areas: "ttvacum ttvacum ttvacum" "txtvacum txtvacum txtvacum" "ben-vacum imgvacum con-vacum" "infovacum infovacum infovacum";
   grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 100px 100px 350px 150px;
+  grid-template-rows: 100px 100px 330px 180px;
   padding: 10px;
 }
 main section .contenedor-grid.vacum .ttvacum {
@@ -225,7 +231,7 @@ main section .contenedor-grid.vacum .infovacum {
 main section .contenedor-grid.electro {
   display: grid;
   grid-template-areas: "tt tt tt" "img txt txt" "img ben con" "img ben info";
-  grid-template-rows: 100px 100px 450px 300px;
+  grid-template-rows: 100px 180px 380px 280px;
   grid-template-columns: 30% 35% 25%;
   background-color: #b3b792;
   width: 100%;
@@ -256,7 +262,7 @@ main section .contenedor-grid.radio {
   display: grid;
   grid-template-areas: "tt tt" "txt img" "ben img" "info con";
   grid-template-columns: 55% 40%;
-  grid-template-rows: 100px 200px 450px 300px;
+  grid-template-rows: 100px 200px 400px 300px;
   padding: 10px;
 }
 main section .contenedor-grid.radio .ttradio {
@@ -270,6 +276,7 @@ main section .contenedor-grid.radio .imgradio {
   grid-area: img;
   padding: 20px;
   width: 350px;
+  padding-top: 70px;
 }
 main section .contenedor-grid.radio .benradio {
   grid-area: ben;
@@ -284,7 +291,7 @@ main section .contenedor-grid.depi {
   display: grid;
   grid-template-areas: "tt tt tt tt" "txt1 txt1 txt2 txt2" "ben img img con" "info1 info1 info2 info2";
   grid-template-columns: 30% 15% 15% 35%;
-  grid-template-rows: 100px 250px 400px 350px;
+  grid-template-rows: 100px 320px 360px 350px;
   background-color: #b3b792;
   align-items: center;
   padding: 20px;
@@ -321,12 +328,13 @@ main section .contenedor-grid.depi .info2depi {
   text-align: left;
   align-content: center;
   width: 100%;
+  padding-left: 30px;
 }
 main section .contenedor-grid.masajes {
   display: grid;
   grid-template-areas: "tt tt tt" "txt txt img" "ben ben img" "tipos tipos tipos";
   grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 100px 200px 400px 400px;
+  grid-template-rows: 100px 180px 470px 440px;
 }
 main section .contenedor-grid.masajes .ttmasajes {
   grid-area: tt;
@@ -346,22 +354,103 @@ main section .contenedor-grid.masajes .tiposmasajes {
 main section .contenedor-grid.masajes .benmasajes {
   grid-area: ben;
 }
-main section .radiofacial {
+main .sect-faciales p {
+  padding: 5px;
+}
+main .sect-faciales .radiofacial {
   background-color: #b3b792;
   padding: 10px;
+  margin: 15px;
 }
-main section .lifting {
+main .sect-faciales .radiofacial p {
+  margin: 30px;
+}
+main .sect-faciales .puntadiamante {
+  padding: 10px;
+  margin: 15px;
+}
+main .sect-faciales .puntadiamante p {
+  margin: 30px;
+}
+main .sect-faciales .lifting {
   background-color: #b3b792;
   padding: 10px;
+  margin: 15px;
 }
-main section .pestañasycejas {
+main .sect-faciales .lifting p {
+  margin: 30px;
+}
+main .sect-faciales .pestañasycejas {
   background-color: #b3b792;
   padding: 10px;
+  margin: 15px;
 }
-main section .manosypies {
+main .sect-faciales .pestañasycejas h4 {
+  font-weight: bolder;
+}
+main .sect-faciales .pestañasycejas h5 {
+  font-weight: bold;
+}
+main .sect-faciales .pestañasycejas p {
+  margin: 30px;
+}
+main .sect-manosypies {
   padding: 20px;
   padding-top: 5px;
   margin: 15px;
+}
+main .sect-manosypies p {
+  padding: 5px;
+}
+main .sect-manosypies .contenedor-grid.uñas {
+  display: grid;
+  grid-template-areas: "txt txt txt" "imgsemi imgcapping imgesculpidas" "ttsemi ttcapping ttesculpidas" "txtsemi txtcapping txtesculpidas" "info1 info1 info1" "info2 info2 info2" "diseño diseño diseño";
+  grid-template-columns: 35% 35% 35%;
+  grid-template-rows: 100px 400px repeat(400px);
+  margin: 15px;
+  padding: 20px;
+}
+main .sect-manosypies .contenedor-grid.uñas .txtuñas {
+  grid-area: txt;
+}
+main .sect-manosypies .contenedor-grid.uñas .semipermanente {
+  grid-area: ttsemi;
+}
+main .sect-manosypies .contenedor-grid.uñas .imgsemi {
+  grid-area: imgsemi;
+  width: 350px;
+}
+main .sect-manosypies .contenedor-grid.uñas .txtsemi {
+  grid-area: txtsemi;
+}
+main .sect-manosypies .contenedor-grid.uñas .capping {
+  grid-area: ttcapping;
+}
+main .sect-manosypies .contenedor-grid.uñas .imgcapping {
+  grid-area: imgcapping;
+  width: 300px;
+}
+main .sect-manosypies .contenedor-grid.uñas .txtcapping {
+  grid-area: txtcapping;
+}
+main .sect-manosypies .contenedor-grid.uñas .esculpidas {
+  grid-area: ttesculpidas;
+}
+main .sect-manosypies .contenedor-grid.uñas .imgesculpidas {
+  grid-area: imgesculpidas;
+  width: 250px;
+}
+main .sect-manosypies .contenedor-grid.uñas .txtesculpidas {
+  grid-area: txtesculpidas;
+}
+main .sect-manosypies .contenedor-grid.uñas .info1esculpidas {
+  grid-area: info1;
+}
+main .sect-manosypies .contenedor-grid.uñas .info2esculpidas {
+  grid-area: info2;
+}
+main .sect-manosypies .contenedor-grid.uñas .explicaciondiseños {
+  grid-area: diseño;
 }
 
 main .presentaciondanza {

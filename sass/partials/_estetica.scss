@@ -6,11 +6,14 @@ main {
     }
     .presentacion {
         text-align: center;
-        margin: 80px;
+        margin: 30px;
         font-size: 1.6rem;
     }
     /*Grid COPAS*/
     section {
+        p {
+            padding: 5px;
+        }
         margin: 20px;
         .contenedor-grid.copas {
             display: grid;
@@ -20,8 +23,9 @@ main {
             "beneficios beneficios img"
             "contradicciones contradicciones adicionales";
             grid-template-columns: 30% 30% 30%;
-            grid-template-rows: 100px 80px 330px 250px ;
+            grid-template-rows: 100px 80px 380px 250px ;
             background-color: #b3b792;
+            padding-left: 20px;
             .ttcopas {
                 grid-area: titulo;
                 text-align: center;
@@ -31,6 +35,7 @@ main {
             }
             .bencopas {
                     grid-area: beneficios;
+                    padding-top: 10px;
             }
             .concopas {
                     grid-area: contradicciones;
@@ -53,7 +58,7 @@ main {
             "ben-vacum imgvacum con-vacum"
             "infovacum infovacum infovacum";
             grid-template-columns: 30% 40% 30%;
-            grid-template-rows: 100px 100px 350px 150px;
+            grid-template-rows: 100px 100px 330px 180px;
             padding: 10px;
             .ttvacum {
                 grid-area: ttvacum;
@@ -91,7 +96,7 @@ main {
             "img txt txt"
             "img ben con"
             "img ben info" ;
-            grid-template-rows: 100px 100px 450px 300px;
+            grid-template-rows: 100px 180px 380px 280px;
             grid-template-columns: 30% 35% 25%;
 
             background-color: #b3b792;
@@ -131,7 +136,7 @@ main {
             "ben img"
             "info con";
             grid-template-columns: 55% 40%;
-            grid-template-rows: 100px 200px 450px 300px;
+            grid-template-rows: 100px 200px 400px 300px;
             padding: 10px;
             .ttradio {
                 grid-area: tt;
@@ -144,6 +149,7 @@ main {
                 grid-area: img;
                 padding: 20px;
                 width: 350px;
+                padding-top: 70px;
             }
             .benradio {
                 grid-area: ben;
@@ -165,7 +171,7 @@ main {
             "ben img img con"
             "info1 info1 info2 info2";
             grid-template-columns: 30% 15% 15% 35%;
-            grid-template-rows: 100px 250px 400px 350px;
+            grid-template-rows: 100px 320px 360px 350px;
 
             background-color: #b3b792;
             align-items: center;
@@ -202,7 +208,8 @@ main {
                 grid-area: info2;
                 text-align: left;
                 align-content: center;
-                width: 100%;               
+                width: 100%;  
+                padding-left: 30px;             
             }
         }
         /*grid masajes*/
@@ -214,7 +221,7 @@ main {
             "ben ben img"
             "tipos tipos tipos";
             grid-template-columns: 25% 25% 50%;
-            grid-template-rows: 100px 200px 400px 400px;
+            grid-template-rows: 100px 180px 470px 440px;
 
             .ttmasajes {
                 grid-area: tt;
@@ -235,26 +242,120 @@ main {
                 grid-area: ben;
             }
         }
+    }
+    /*section faciales*/
+    .sect-faciales {
+        p {
+            padding: 5px;
+        }
         .radiofacial {
             background-color: #b3b792;
             padding: 10px;
+            margin: 15px;
+            p {
+                margin: 30px;
+            }
         }
-
+        .puntadiamante {
+            padding: 10px;
+            margin: 15px;
+            p {
+                margin: 30px;
+            }
+        }
         .lifting {
             background-color: #b3b792;
             padding: 10px;
+            margin: 15px;
+            p {
+                margin: 30px;
+            }
         }
 
         .pestañasycejas {
             background-color: #b3b792;
             padding: 10px;
-        }
-
-        .manosypies {
-            padding: 20px;
-            padding-top: 5px;
             margin: 15px;
+            h4 {
+                font-weight: bolder;
+            }
+            h5 {
+                font-weight: bold;
+            }
+            p {
+                margin: 30px;
+            }
         }
     }
-    
+    .sect-manosypies {
+        p {
+            padding: 5px;
+        }
+        padding: 20px;
+        padding-top: 5px;
+        margin: 15px;
+        .contenedor-grid.uñas {
+            display: grid;
+            grid-template-areas: 
+            "txt txt txt"
+            "imgsemi imgcapping imgesculpidas"
+            "ttsemi ttcapping ttesculpidas"
+            "txtsemi txtcapping txtesculpidas"
+            "info1 info1 info1"
+            "info2 info2 info2"
+            "diseño diseño diseño";
+            grid-template-columns: 35% 35% 35%;
+            grid-template-rows: 100px 400px (repeat(5*80px));
+            margin: 15px;
+            padding: 20px;
+            
+
+            .txtuñas {
+                grid-area: txt;
+            }
+            .semipermanente {
+                grid-area: ttsemi;
+            }
+            .imgsemi {
+                grid-area: imgsemi;
+                width: 350px;
+                
+            }
+            .txtsemi {
+                grid-area: txtsemi;
+            }
+            .capping {
+                grid-area: ttcapping;
+            }
+            .imgcapping {
+                grid-area: imgcapping;
+                width: 300px;
+            }
+            .txtcapping {
+                grid-area: txtcapping;
+            }
+            .esculpidas {
+                grid-area: ttesculpidas;
+            }
+            .imgesculpidas {
+                grid-area: imgesculpidas;
+                width: 250px;
+            }
+            .txtesculpidas {
+                grid-area: txtesculpidas;
+            }
+            .info1esculpidas {
+                grid-area: info1;
+            }
+            .info2esculpidas {
+                grid-area: info2;
+            }
+            .explicaciondiseños {
+                grid-area: diseño;
+            }
+
+        }
+    }
 }
+   
+

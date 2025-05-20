@@ -60,9 +60,7 @@
 
     <!--cuerpo de pag-->
     <main>
-        <!--presentacion de pag-->
-        <h1>Estética</h1>
-
+    
         <!--carrusel estetica-->
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -85,7 +83,8 @@
                 <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        
+        <!--presentacion de pag-->
+        <h1>Estética</h1>
 
             <p class="presentacion">Creemos que cada persona merece sentirse radiante, tanto por fuera como por dentro. Por eso, ofrecemos una gama exclusiva de tratamientos faciales y corporales diseñados para cuidar tu piel, realzar tu naturalidad y brindarte momentos de relajación que transforman.</p>
 
@@ -96,10 +95,9 @@
 
 
            <!--sección tratamientos corporales-->
-           <select name="#tratamientoscorporales" id="tratamientoscorporales"></select>
      
            <h2 class="h2tratamientos">Tratamientos corporales</h2>
-           <section>
+           <section name="#tratamientoscorporales" id="tratamientoscorporales">
                 <!--copas colombianas-->
                 <section class="contenedor-grid copas">
                         <h3 class="ttcopas">Copas colombianas</h3>
@@ -318,16 +316,16 @@
 
 
             <!--seccion tratamientos faciales-->
-            <select name="#tratamientosfaciales" id="tratamientosfaciales"></select>
+        
             <h2 class="h2tratamientos">Tratamientos faciales</h2>
-            <section>
+            <section class="sect-faciales" name="#tratamientosfaciales" id="tratamientosfaciales">
                     <!--radiofrecuencia-->
                 <div class="radiofacial">
                     <h3>Radiofrecuencia facial</h3>
                     <p>Es un tratamiento estético no invasivo que utiliza ondas electromagnéticas para generar calor controlado en las capas profundas de la piel. 
-                    <p>Reafirma y reduce flacidez en mejillas, cuello, mandíbula (efecto "lifting")</p>
-                    <p>Rellena arrugas: Disminuye líneas de expresión (patas de gallo, surcos nasogenianos).</p>
-                    <p>Mejora textura cerrando poros, unificando el tono y aumentando la luminosidad.</p>
+                    <p>✔ Reafirma y reduce flacidez en mejillas, cuello, mandíbula (efecto "lifting")</p>
+                    <p>✔ Rellena arrugas: Disminuye líneas de expresión (patas de gallo, surcos nasogenianos).</p>
+                    <p>✔ Mejora textura cerrando poros, unificando el tono y aumentando la luminosidad.</p>
                 </div>
 
 
@@ -368,19 +366,29 @@
                     
                 </div>
             </section>
-
+        
 
             <!--seccion manos y pies-->
-            <select name="#manosypies" id="manosypies"></select>
-            <div class="manosypies">
-                <h2 class="h2tratamientos">Manos</h2>
-                    <p>En nuestro espacio tenemos para ofrecerte los siguientes servicios para la belleza de tus manos y pies:</p>
-                    <p>Semipermanente</p>
-                    <p>Capping gel</p>
-                    <p>Esculpidas (largo 1 y 2)</p>
-                    <p>Pedicura</p>
-                <imgsrc="../medios/uñas.jpg" alt="uñas">
-            </div>
+            <section class="sect-manosypies" name="#manosypies" id="manosypies">
+                    <h2 class="h2tratamientos">Manos</h2>
+                    <div class="contenedor-grid uñas">
+                        <p class="txtuñas">En nuestro espacio tenemos para ofrecerte los siguientes servicios para la belleza de tus manos y pies:</p>
+                        <p class="semipermanente">Esmaltado semipermanente</p>
+                        <img class="imgsemi" src="../medios/semipermanenteuñas.jpg" alt="esmaltado semipermanente">
+                        <p class="txtsemi">Da color intenso y durabilidad hasta 21 días. </p>
+                        <p class="capping">Capping gel</p>
+                        <img class="imgcapping" src="../medios/cappinggel.jpg" alt="capping gel">
+                        <p class="txtcapping">Fortalece y protege tus uñas naturales</p>
+                        <p class="esculpidas">Esculpidas</p>
+                        <img class="imgesculpidas" src="../medios/esculpidas.jpg" alt="esculpidas soft gel">
+                        <p class="txtesculpidas">Extiende, protege y luce tus uñas naturales.</p>
+                        <p class="info1esculpidas">Esculpidas gel (largo 1 y 2)</p>
+                        <p class="info2esculpidas">Sotf gel</p>
+
+                        <p class="explicaciondiseños">Todos los tratamientos tienen incluidos 2 diseños por mano (en caso de ser un trabajo realizado previamente en el local, el retiro también será incluido).</p>
+                    </div>
+                    
+            </section>
     </main>
 
 
