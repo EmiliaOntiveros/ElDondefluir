@@ -2,7 +2,10 @@
 /*GRILLAS DE ESTETICA*/
 main {
     h1 {
+        margin: 20px;
         padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
     }
     .presentacion {
         text-align: center;
@@ -26,9 +29,13 @@ main {
             grid-template-rows: 100px 80px 380px 250px ;
             background-color: #b3b792;
             padding-left: 20px;
+            h4 {
+                font-weight: bolder;
+            }
             .ttcopas {
                 grid-area: titulo;
-                text-align: center;
+                font-weight: bold;
+                padding-top: 30px;
             }
             .txtcopas {
                     grid-area: texto;
@@ -46,6 +53,7 @@ main {
             .imgcopas {
                     grid-area: img;
                     width: 480px;
+                    border-radius: 15px;
             }
         }
         
@@ -60,9 +68,13 @@ main {
             grid-template-columns: 30% 40% 30%;
             grid-template-rows: 100px 100px 330px 180px;
             padding: 10px;
+            h4 {
+                font-weight: bolder;
+            }
             .ttvacum {
                 grid-area: ttvacum;
-                text-align: center;
+                font-weight: bold;
+                padding-top: 20px;
             }
     
             .txtvacum {
@@ -77,6 +89,7 @@ main {
                 grid-area: imgvacum;
                 width: 450px;
                 align-items: center;
+                border-radius: 15px;
             }
     
             .convacum {
@@ -96,24 +109,28 @@ main {
             "img txt txt"
             "img ben con"
             "img ben info" ;
-            grid-template-rows: 100px 180px 380px 280px;
-            grid-template-columns: 30% 35% 25%;
+            grid-template-rows: 100px 130px 380px 200px;
+            grid-template-columns: 30% 43% 25%;
 
             background-color: #b3b792;
             width: 100%;
             margin-left: 0%;
             padding: 10px;
-
+            h4 {
+                font-weight: bolder;
+            }
             .ttelectro {
                 grid-area: tt;
-                text-align: center;
+                font-weight: bold;
+                padding-top: 25px;
             }
             .txtelectro {
                 grid-area: txt;
             }   
             .imgelectro {
                 grid-area: img;
-                width: 350px;               
+                width: 350px;   
+                border-radius: 15px;            
             }   
             .benelectro { 
                 grid-area: ben;
@@ -131,25 +148,31 @@ main {
         .contenedor-grid.radio {
             display: grid;
             grid-template-areas: 
-            "tt tt"
-            "txt img"
-            "ben img"
-            "info con";
-            grid-template-columns: 55% 40%;
-            grid-template-rows: 100px 200px 400px 300px;
+            "tt tt tt"
+            "txt txt img"
+            "ben ben img"
+            "con info info";
+            grid-template-columns: 43% 30% 20%;
+            grid-template-rows: 100px 150px 400px 300px;
             padding: 10px;
+            h4 {
+                font-weight: bolder;
+            }
             .ttradio {
                 grid-area: tt;
-                text-align: center;
+                font-weight: bold;
+                padding-top: 20px;
             }
             .txtradio {
                 grid-area: txt;
             }
             .imgradio { 
+                border-radius: 15px;
                 grid-area: img;
                 padding: 20px;
                 width: 350px;
                 padding-top: 70px;
+                
             }
             .benradio {
                 grid-area: ben;
@@ -170,16 +193,19 @@ main {
             "txt1 txt1 txt2 txt2"
             "ben img img con"
             "info1 info1 info2 info2";
-            grid-template-columns: 30% 15% 15% 35%;
-            grid-template-rows: 100px 320px 360px 350px;
+            grid-template-columns: 35% 15% 15% 35%;
+            grid-template-rows: 50px 320px 360px 350px;
 
             background-color: #b3b792;
             align-items: center;
             padding: 20px;
-
+            h4 {
+                font-weight: bolder;
+            }
             .ttdepi {
                 grid-area: tt;
-                text-align: center;
+                font-weight: bold;
+                padding-top: 20px;
             }    
             .txt1depi {
                 grid-area: txt1;
@@ -198,7 +224,8 @@ main {
             .imgdepi {
                 grid-area: img;
                 width: 300px;
-                padding: 10px;                
+                padding: 10px;  
+                border-radius: 15px;              
             }   
             .info1depi {
                 grid-area: info1;
@@ -220,11 +247,16 @@ main {
             "txt txt img"
             "ben ben img"
             "tipos tipos tipos";
-            grid-template-columns: 25% 25% 50%;
-            grid-template-rows: 100px 180px 470px 440px;
-
+            grid-template-columns: 25% 40% 35%;
+            grid-template-rows: 100px 180px 450px 440px;
+            padding: 20px;
+            h4 {
+                font-weight: bolder;
+            }
             .ttmasajes {
                 grid-area: tt;
+                font-weight: bold;
+                padding-top: 20px;
             }    
             .txtmasajes {
                 grid-area: txt;
@@ -234,6 +266,7 @@ main {
                 width: 400px;
                 background-position: right;
                 padding-left: 10px;
+                border-radius: 15px;
             }
             .tiposmasajes {
                 grid-area: tipos;
@@ -244,6 +277,9 @@ main {
         }
     }
     /*section faciales*/
+    h2 {
+        padding: 20px;
+    }
     .sect-faciales {
         p {
             padding: 5px;
@@ -255,12 +291,28 @@ main {
             p {
                 margin: 30px;
             }
+            h3 {
+                font-weight: bold;
+            }
         }
         .puntadiamante {
+            h3 {
+                font-weight: bold;
+            }
+            h4 {
+                font-weight: bolder;
+            }
             padding: 10px;
             margin: 15px;
             p {
                 margin: 30px;
+            }
+            img {
+                display: flex;
+                margin-left: auto;
+                width: 200px;
+                width: 40%;
+                border-radius: 15px;
             }
         }
         .lifting {
@@ -270,9 +322,19 @@ main {
             p {
                 margin: 30px;
             }
+            img {
+                width: 200px; 
+                display: flex;
+                margin-left: auto;
+                border-radius: 15px;
+                
+            }
         }
 
         .pestañasycejas {
+            h3 {
+                font-weight: bold;
+            }
             background-color: #b3b792;
             padding: 10px;
             margin: 15px;
@@ -293,7 +355,10 @@ main {
         }
         padding: 20px;
         padding-top: 5px;
-        margin: 15px;
+        margin: 20px;
+        h2 {
+            font-weight: bold;
+        }
         .contenedor-grid.uñas {
             display: grid;
             grid-template-areas: 
@@ -301,24 +366,25 @@ main {
             "imgsemi imgcapping imgesculpidas"
             "ttsemi ttcapping ttesculpidas"
             "txtsemi txtcapping txtesculpidas"
-            "info1 info1 info1"
-            "info2 info2 info2"
+            ". . info1"
+            ". . info2"
             "diseño diseño diseño";
             grid-template-columns: 35% 35% 35%;
-            grid-template-rows: 100px 400px (repeat(5*80px));
+            grid-template-rows: 100px 400px (repeat(2*80px)) 10px 10px 200px;
             margin: 15px;
             padding: 20px;
-            
-
+            margin: 20px;
             .txtuñas {
                 grid-area: txt;
             }
             .semipermanente {
                 grid-area: ttsemi;
+                font-weight: bolder;
             }
             .imgsemi {
                 grid-area: imgsemi;
                 width: 350px;
+                border-radius: 15px;
                 
             }
             .txtsemi {
@@ -326,32 +392,41 @@ main {
             }
             .capping {
                 grid-area: ttcapping;
+                font-weight: bolder;
             }
             .imgcapping {
                 grid-area: imgcapping;
                 width: 300px;
+                border-radius: 15px;
             }
             .txtcapping {
                 grid-area: txtcapping;
             }
             .esculpidas {
                 grid-area: ttesculpidas;
+                font-weight: bolder;
             }
             .imgesculpidas {
                 grid-area: imgesculpidas;
                 width: 250px;
+                border-radius: 15px;
+
+                
             }
             .txtesculpidas {
                 grid-area: txtesculpidas;
             }
             .info1esculpidas {
                 grid-area: info1;
+                padding: 0px;
             }
             .info2esculpidas {
                 grid-area: info2;
+                padding: 0px;
             }
             .explicaciondiseños {
                 grid-area: diseño;
+                padding-top: 30px;
             }
 
         }

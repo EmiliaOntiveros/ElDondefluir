@@ -1,13 +1,130 @@
 @use "./variables" as *;
 main {
+        /*banner*/
+    .bannerdanza {
+        max-width: 100%; //terminar
+        width: 1425px;
+        margin-top: -10px;
+    }
     .presentaciondanza {
-        border: $verdeoscuro solid 20px;
+        border: $verdeoscuro solid 10px;
+        margin: 30px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bolder;
     }
     .videodanza {
         margin-left: 30px;
+        
     }     
-    p { 
-        padding: 20px;     
+    p {
         font-size: 1.4rem;
+    }
+    .grid-danza.h2 { 
+        display: grid;
+        grid-template-areas: 
+        "niveles filosofia"
+        "p1 p2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 150px;
+        padding-top: 30px;
+        margin: 8%;
+        h2 {
+            font-weight: bolder;
+        }
+        .todoslosniveles {
+            grid-area: niveles;
+        }
+        .p1danza {
+            grid-area: p1;
+        }
+        .filosofia {
+            grid-area: filosofia;
+        }
+        .p2danza {
+            grid-area: p2;
+        }
+    }
+        /*grilla de horarios danza*/
+    .grid-danza.horarios {
+        display: grid;
+        grid-template-areas: 
+        "categoria horarios horarios"
+        "infantil horarioinfantil ejercicios"
+        "juvenil horariojuvenil ejercicios"
+        "adultos horarioadultos practicas"
+        "adultosmayores horariomayores elongacion";
+        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 120px repeat(4*100px);
+        padding: 40px;
+        margin: 40px;
+        
+        background-color: $verdeclaro;
+        text-shadow: 4px -1px 5px rgba(72,54,35,0.58);
+        .ttdanza {
+            grid-area: categoria;
+            font-weight: bolder;
+            padding: 15px;
+            font-size: 2.3rem;
+        }
+        .horarios {
+            grid-area: horarios;
+            font-weight: bolder;
+            text-align: center;
+            padding: 15px;
+            font-size: 2.3rem;
+        }
+        .infantil {
+            grid-area: infantil;
+            font-size: 2rem;
+        }
+        .horarioinfant {
+            grid-area: horarioinfantil;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .ejerciciosdanza {
+            grid-area: ejercicios;
+            font-size: 2rem;
+        }
+        .juvenil {
+            grid-area: juvenil;
+            font-size: 2rem;
+        }
+        .horariojuvenil {
+            grid-area: horariojuvenil;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .adultos {
+            grid-area: adultos;
+            font-size: 2rem;
+        }
+        .horarioadultos {
+            grid-area: horarioadultos;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .practicasdanza {
+            grid-area: practicas;
+            font-size: 2rem;
+
+        }
+        .adultosmayores {
+            grid-area: adultosmayores;
+            font-size: 2rem;
+            
+        }
+        .horariosmayores {
+            grid-area: horariomayores;
+            text-align: center;
+            font-size: 2rem;
+
+        }
+        .elongaciondanza {
+            grid-area: elongacion;
+            font-size: 2rem;
+
+        }
     }
 }

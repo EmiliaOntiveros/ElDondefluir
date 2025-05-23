@@ -10,9 +10,14 @@ header {
             background-color: #b3b792;
             font-size: 25px;
             height: 90px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            .milo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                background-color: aqua;
+            }
+            
             .mama { /*LOGO*/
                 width: 95px;
                 margin: 10px;

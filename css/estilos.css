@@ -8,9 +8,13 @@ header .zoa .papa {
   background-color: #b3b792;
   font-size: 25px;
   height: 90px;
+}
+header .zoa .papa .milo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  background-color: aqua;
 }
 header .zoa .papa .mama { /*LOGO*/
   width: 95px;
@@ -62,7 +66,8 @@ main div .p.index1 {
 }
 main .h2index {
   font-size: 2rem;
-  margin: 40px;
+  margin: 30px;
+  padding-top: 100px;
 }
 main .div.servicios.index {
   padding: 30px;
@@ -152,7 +157,10 @@ main {
   /*section faciales*/
 }
 main h1 {
+  margin: 20px;
   padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 main .presentacion {
   text-align: center;
@@ -178,9 +186,13 @@ main section .contenedor-grid.copas {
   background-color: #b3b792;
   padding-left: 20px;
 }
+main section .contenedor-grid.copas h4 {
+  font-weight: bolder;
+}
 main section .contenedor-grid.copas .ttcopas {
   grid-area: titulo;
-  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
 }
 main section .contenedor-grid.copas .txtcopas {
   grid-area: texto;
@@ -198,6 +210,7 @@ main section .contenedor-grid.copas .infocopas {
 main section .contenedor-grid.copas .imgcopas {
   grid-area: img;
   width: 480px;
+  border-radius: 15px;
 }
 main section .contenedor-grid.vacum {
   display: grid;
@@ -206,9 +219,13 @@ main section .contenedor-grid.vacum {
   grid-template-rows: 100px 100px 330px 180px;
   padding: 10px;
 }
+main section .contenedor-grid.vacum h4 {
+  font-weight: bolder;
+}
 main section .contenedor-grid.vacum .ttvacum {
   grid-area: ttvacum;
-  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
 }
 main section .contenedor-grid.vacum .txtvacum {
   grid-area: txtvacum;
@@ -220,6 +237,7 @@ main section .contenedor-grid.vacum .imgvacum {
   grid-area: imgvacum;
   width: 450px;
   align-items: center;
+  border-radius: 15px;
 }
 main section .contenedor-grid.vacum .convacum {
   grid-area: con-vacum;
@@ -231,16 +249,20 @@ main section .contenedor-grid.vacum .infovacum {
 main section .contenedor-grid.electro {
   display: grid;
   grid-template-areas: "tt tt tt" "img txt txt" "img ben con" "img ben info";
-  grid-template-rows: 100px 180px 380px 280px;
-  grid-template-columns: 30% 35% 25%;
+  grid-template-rows: 100px 130px 380px 200px;
+  grid-template-columns: 30% 43% 25%;
   background-color: #b3b792;
   width: 100%;
   margin-left: 0%;
   padding: 10px;
 }
+main section .contenedor-grid.electro h4 {
+  font-weight: bolder;
+}
 main section .contenedor-grid.electro .ttelectro {
   grid-area: tt;
-  text-align: center;
+  font-weight: bold;
+  padding-top: 25px;
 }
 main section .contenedor-grid.electro .txtelectro {
   grid-area: txt;
@@ -248,6 +270,7 @@ main section .contenedor-grid.electro .txtelectro {
 main section .contenedor-grid.electro .imgelectro {
   grid-area: img;
   width: 350px;
+  border-radius: 15px;
 }
 main section .contenedor-grid.electro .benelectro {
   grid-area: ben;
@@ -260,19 +283,24 @@ main section .contenedor-grid.electro .infoelectro {
 }
 main section .contenedor-grid.radio {
   display: grid;
-  grid-template-areas: "tt tt" "txt img" "ben img" "info con";
-  grid-template-columns: 55% 40%;
-  grid-template-rows: 100px 200px 400px 300px;
+  grid-template-areas: "tt tt tt" "txt txt img" "ben ben img" "con info info";
+  grid-template-columns: 43% 30% 20%;
+  grid-template-rows: 100px 150px 400px 300px;
   padding: 10px;
+}
+main section .contenedor-grid.radio h4 {
+  font-weight: bolder;
 }
 main section .contenedor-grid.radio .ttradio {
   grid-area: tt;
-  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
 }
 main section .contenedor-grid.radio .txtradio {
   grid-area: txt;
 }
 main section .contenedor-grid.radio .imgradio {
+  border-radius: 15px;
   grid-area: img;
   padding: 20px;
   width: 350px;
@@ -290,15 +318,19 @@ main section .contenedor-grid.radio .inforadio {
 main section .contenedor-grid.depi {
   display: grid;
   grid-template-areas: "tt tt tt tt" "txt1 txt1 txt2 txt2" "ben img img con" "info1 info1 info2 info2";
-  grid-template-columns: 30% 15% 15% 35%;
-  grid-template-rows: 100px 320px 360px 350px;
+  grid-template-columns: 35% 15% 15% 35%;
+  grid-template-rows: 50px 320px 360px 350px;
   background-color: #b3b792;
   align-items: center;
   padding: 20px;
 }
+main section .contenedor-grid.depi h4 {
+  font-weight: bolder;
+}
 main section .contenedor-grid.depi .ttdepi {
   grid-area: tt;
-  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
 }
 main section .contenedor-grid.depi .txt1depi {
   grid-area: txt1;
@@ -318,6 +350,7 @@ main section .contenedor-grid.depi .imgdepi {
   grid-area: img;
   width: 300px;
   padding: 10px;
+  border-radius: 15px;
 }
 main section .contenedor-grid.depi .info1depi {
   grid-area: info1;
@@ -333,11 +366,17 @@ main section .contenedor-grid.depi .info2depi {
 main section .contenedor-grid.masajes {
   display: grid;
   grid-template-areas: "tt tt tt" "txt txt img" "ben ben img" "tipos tipos tipos";
-  grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 100px 180px 470px 440px;
+  grid-template-columns: 25% 40% 35%;
+  grid-template-rows: 100px 180px 450px 440px;
+  padding: 20px;
+}
+main section .contenedor-grid.masajes h4 {
+  font-weight: bolder;
 }
 main section .contenedor-grid.masajes .ttmasajes {
   grid-area: tt;
+  font-weight: bold;
+  padding-top: 20px;
 }
 main section .contenedor-grid.masajes .txtmasajes {
   grid-area: txt;
@@ -347,12 +386,16 @@ main section .contenedor-grid.masajes .imgmasajes {
   width: 400px;
   background-position: right;
   padding-left: 10px;
+  border-radius: 15px;
 }
 main section .contenedor-grid.masajes .tiposmasajes {
   grid-area: tipos;
 }
 main section .contenedor-grid.masajes .benmasajes {
   grid-area: ben;
+}
+main h2 {
+  padding: 20px;
 }
 main .sect-faciales p {
   padding: 5px;
@@ -365,12 +408,28 @@ main .sect-faciales .radiofacial {
 main .sect-faciales .radiofacial p {
   margin: 30px;
 }
+main .sect-faciales .radiofacial h3 {
+  font-weight: bold;
+}
 main .sect-faciales .puntadiamante {
   padding: 10px;
   margin: 15px;
 }
+main .sect-faciales .puntadiamante h3 {
+  font-weight: bold;
+}
+main .sect-faciales .puntadiamante h4 {
+  font-weight: bolder;
+}
 main .sect-faciales .puntadiamante p {
   margin: 30px;
+}
+main .sect-faciales .puntadiamante img {
+  display: flex;
+  margin-left: auto;
+  width: 200px;
+  width: 40%;
+  border-radius: 15px;
 }
 main .sect-faciales .lifting {
   background-color: #b3b792;
@@ -380,10 +439,19 @@ main .sect-faciales .lifting {
 main .sect-faciales .lifting p {
   margin: 30px;
 }
+main .sect-faciales .lifting img {
+  width: 200px;
+  display: flex;
+  margin-left: auto;
+  border-radius: 15px;
+}
 main .sect-faciales .pestañasycejas {
   background-color: #b3b792;
   padding: 10px;
   margin: 15px;
+}
+main .sect-faciales .pestañasycejas h3 {
+  font-weight: bold;
 }
 main .sect-faciales .pestañasycejas h4 {
   font-weight: bolder;
@@ -397,71 +465,190 @@ main .sect-faciales .pestañasycejas p {
 main .sect-manosypies {
   padding: 20px;
   padding-top: 5px;
-  margin: 15px;
+  margin: 20px;
 }
 main .sect-manosypies p {
   padding: 5px;
 }
+main .sect-manosypies h2 {
+  font-weight: bold;
+}
 main .sect-manosypies .contenedor-grid.uñas {
   display: grid;
-  grid-template-areas: "txt txt txt" "imgsemi imgcapping imgesculpidas" "ttsemi ttcapping ttesculpidas" "txtsemi txtcapping txtesculpidas" "info1 info1 info1" "info2 info2 info2" "diseño diseño diseño";
+  grid-template-areas: "txt txt txt" "imgsemi imgcapping imgesculpidas" "ttsemi ttcapping ttesculpidas" "txtsemi txtcapping txtesculpidas" ". . info1" ". . info2" "diseño diseño diseño";
   grid-template-columns: 35% 35% 35%;
-  grid-template-rows: 100px 400px repeat(400px);
+  grid-template-rows: 100px 400px repeat(160px) 10px 10px 200px;
   margin: 15px;
   padding: 20px;
+  margin: 20px;
 }
 main .sect-manosypies .contenedor-grid.uñas .txtuñas {
   grid-area: txt;
 }
 main .sect-manosypies .contenedor-grid.uñas .semipermanente {
   grid-area: ttsemi;
+  font-weight: bolder;
 }
 main .sect-manosypies .contenedor-grid.uñas .imgsemi {
   grid-area: imgsemi;
   width: 350px;
+  border-radius: 15px;
 }
 main .sect-manosypies .contenedor-grid.uñas .txtsemi {
   grid-area: txtsemi;
 }
 main .sect-manosypies .contenedor-grid.uñas .capping {
   grid-area: ttcapping;
+  font-weight: bolder;
 }
 main .sect-manosypies .contenedor-grid.uñas .imgcapping {
   grid-area: imgcapping;
   width: 300px;
+  border-radius: 15px;
 }
 main .sect-manosypies .contenedor-grid.uñas .txtcapping {
   grid-area: txtcapping;
 }
 main .sect-manosypies .contenedor-grid.uñas .esculpidas {
   grid-area: ttesculpidas;
+  font-weight: bolder;
 }
 main .sect-manosypies .contenedor-grid.uñas .imgesculpidas {
   grid-area: imgesculpidas;
   width: 250px;
+  border-radius: 15px;
 }
 main .sect-manosypies .contenedor-grid.uñas .txtesculpidas {
   grid-area: txtesculpidas;
 }
 main .sect-manosypies .contenedor-grid.uñas .info1esculpidas {
   grid-area: info1;
+  padding: 0px;
 }
 main .sect-manosypies .contenedor-grid.uñas .info2esculpidas {
   grid-area: info2;
+  padding: 0px;
 }
 main .sect-manosypies .contenedor-grid.uñas .explicaciondiseños {
   grid-area: diseño;
+  padding-top: 30px;
 }
 
+main {
+  /*banner*/
+  /*grilla de horarios danza*/
+}
+main .bannerdanza {
+  max-width: 100%;
+  width: 1425px;
+  margin-top: -10px;
+}
 main .presentaciondanza {
-  border: #859476 solid 20px;
+  border: #859476 solid 10px;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
 }
 main .videodanza {
   margin-left: 30px;
 }
 main p {
-  padding: 20px;
   font-size: 1.4rem;
+}
+main .grid-danza.h2 {
+  display: grid;
+  grid-template-areas: "niveles filosofia" "p1 p2";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 150px;
+  padding-top: 30px;
+  margin: 8%;
+}
+main .grid-danza.h2 h2 {
+  font-weight: bolder;
+}
+main .grid-danza.h2 .todoslosniveles {
+  grid-area: niveles;
+}
+main .grid-danza.h2 .p1danza {
+  grid-area: p1;
+}
+main .grid-danza.h2 .filosofia {
+  grid-area: filosofia;
+}
+main .grid-danza.h2 .p2danza {
+  grid-area: p2;
+}
+main .grid-danza.horarios {
+  display: grid;
+  grid-template-areas: "categoria horarios horarios" "infantil horarioinfantil ejercicios" "juvenil horariojuvenil ejercicios" "adultos horarioadultos practicas" "adultosmayores horariomayores elongacion";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 120px repeat(400px);
+  padding: 40px;
+  margin: 40px;
+  background-color: #b3b792;
+  text-shadow: 4px -1px 5px rgba(72, 54, 35, 0.58);
+}
+main .grid-danza.horarios .ttdanza {
+  grid-area: categoria;
+  font-weight: bolder;
+  padding: 15px;
+  font-size: 2.3rem;
+}
+main .grid-danza.horarios .horarios {
+  grid-area: horarios;
+  font-weight: bolder;
+  text-align: center;
+  padding: 15px;
+  font-size: 2.3rem;
+}
+main .grid-danza.horarios .infantil {
+  grid-area: infantil;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .horarioinfant {
+  grid-area: horarioinfantil;
+  text-align: center;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .ejerciciosdanza {
+  grid-area: ejercicios;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .juvenil {
+  grid-area: juvenil;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .horariojuvenil {
+  grid-area: horariojuvenil;
+  text-align: center;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .adultos {
+  grid-area: adultos;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .horarioadultos {
+  grid-area: horarioadultos;
+  text-align: center;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .practicasdanza {
+  grid-area: practicas;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .adultosmayores {
+  grid-area: adultosmayores;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .horariosmayores {
+  grid-area: horariomayores;
+  text-align: center;
+  font-size: 2rem;
+}
+main .grid-danza.horarios .elongaciondanza {
+  grid-area: elongacion;
+  font-size: 2rem;
 }
 
 main .contenedor-grid.entrenamiento {
