@@ -1,13 +1,48 @@
 main {
-    .iconos {
-        width: 50px;
-        margin-left: 5px;
-        margin-right: 5px;
+   
+    h1 {
+        padding: 50px;
+        
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+        }
+        section {
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            p {
+                text-align: left;
+            }
+            .iconosig {
+                padding-right: 35px;
+            }
+        }
+    img {
+        width: 300px;
+        
     }
     .ubicacion {
-        margin: 30px
+        margin: 50px;
+        position: relative;
+        top: auto;
+        left: 360px;
+        box-shadow: -2px 10px 16px 10px rgba(114,92,58,0.75);
+        -webkit-box-shadow: -2px 10px 16px 10px rgba(114,92,58,0.75);
+        -moz-box-shadow: -2px 10px 16px 10px rgba(114,92,58,0.75);
     }
-    .formulario { 
-        margin: 15px;
-    }    
+    div {
+        P{
+            margin: 20px;
+            padding: 30px;
+        }
+    
+        .formulario { 
+            padding: 40px 50px;
+            label {
+                padding: 5px;
+            }
+        }    
+    }
 }

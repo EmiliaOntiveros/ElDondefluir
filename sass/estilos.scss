@@ -12,7 +12,11 @@
 
 
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 body  /*configuracion general de la pag*/ {
     background-color: aliceblue;
     color: #725c3a;
