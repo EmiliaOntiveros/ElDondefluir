@@ -6,3 +6,8 @@ $verdeclaro: #b3b792;
     padding: $padding;
     font-size: $fontsize;
 }
+.bordes {
+     border-radius: 17px 18px 18px 18px;
+    -webkit-border-radius: 17px 18px 18px 18px;
+    -moz-border-radius: 17px 18px 18px 18px;
+}

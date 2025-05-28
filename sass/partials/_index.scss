@@ -1,5 +1,8 @@
 @use "./variables" as *;
 main { 
+    .carruselindex {
+        padding-top: 18px;
+    }
     background-color: aliceblue;
     
     .carousel.slide{
@@ -27,13 +30,18 @@ main {
             margin-right: 50px;
             margin-top: 15px;
             font-size: 1.5rem;
+            padding: 15px;
             background-color: $verdeclaro;
+            border-radius: 17px 18px 18px 18px;
+            -webkit-border-radius: 17px 18px 18px 18px;
+            -moz-border-radius: 17px 18px 18px 18px;
         }
         .p.index1 {
             font-size: 2rem;
             margin-left: 50px;
             margin-right: 50px;
             margin-top: 15px;
+            border-radius: 17px 18px 18px 18px;
             
         }
     }
@@ -46,6 +54,9 @@ main {
         }
 
     .div.servicios.index {
+        h3 {
+            padding-top: 30px;
+        }
         padding: 30px;
         .h3index {
             padding: 30px;
@@ -67,9 +78,12 @@ main {
             text-align: center;
             background-color: $verdeclaro;
             padding-right: 50px;
+            @extend .bordes;
+
             .p.estetica.index {
                 grid-area: presentacion;
                 font-size: 1.7rem;
+                font-weight: bold;
             }
             .p.estetica.index1 {
                 grid-area: copas;
@@ -117,17 +131,22 @@ main {
             }
             .p.danza.index.tt {
                 text-align: center;
+                @extend .bordes;
+                font-weight: bold;
             }
+            @extend .bordes;
         }
         /*entrenamientos*/
         .entrenamientoindex {
             background-color: $verdeclaro;
             .p.entrenamiento.index.tt {
                 text-align: center;
+                font-weight: bold;
             }
             .p.entrenamiento.index {
                 font-size: 1.6rem;
             }
+            @extend .bordes;
         }
         
         

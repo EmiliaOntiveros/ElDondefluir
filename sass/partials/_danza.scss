@@ -2,9 +2,9 @@
 main {
         /*banner*/
     .bannerdanza {
-        max-width: 100%; //terminar
+        max-width: 100%;
         width: 1425px;
-        margin-top: -10px;
+        height: 600px;
     }
     .presentaciondanza {
         border: $verdeoscuro solid 10px;
@@ -12,6 +12,7 @@ main {
         text-align: center;
         font-size: 1.6rem;
         font-weight: bolder;
+        @extend .bordes;
     }
     .videodanza {
         margin-left: 30px;
@@ -29,6 +30,7 @@ main {
         grid-template-rows: 100px 150px;
         padding-top: 30px;
         margin: 8%;
+        
         h2 {
             font-weight: bolder;
         }
@@ -58,7 +60,7 @@ main {
         grid-template-columns: 120px repeat(4*100px);
         padding: 40px;
         margin: 40px;
-        
+        @extend .bordes;
         background-color: $verdeclaro;
         text-shadow: 4px -1px 5px rgba(72,54,35,0.58);
         .ttdanza {

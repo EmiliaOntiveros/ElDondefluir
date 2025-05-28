@@ -1,6 +1,12 @@
 @charset "UTF-8";
+.bordes, main .ubicacion, main .contenedor-grid.entrenamiento, main .contenedor-grid.entrenamiento .imgentrenamiento, main .contenedor-grid.entrenamiento .imgyoga, main .contenedor-grid.entrenamiento .imgpilates, main .presentaciondanza, main .grid-danza.horarios, main section .contenedor-grid.copas, main section .contenedor-grid.electro, main section .contenedor-grid.radio .imgradio, main section .contenedor-grid.depi, main .sect-faciales .radiofacial, main .sect-faciales .lifting, main .sect-faciales .pestañasycejas, main .div.servicios.index .contenedor.grid.index, main .div.servicios.index .danzaindex .p.danza.index.tt, main .div.servicios.index .danzaindex, main .div.servicios.index .entrenamientoindex {
+  border-radius: 17px 18px 18px 18px;
+  -webkit-border-radius: 17px 18px 18px 18px;
+  -moz-border-radius: 17px 18px 18px 18px;
+}
+
 header {
-  height: 90px;
+  height: 80px;
   margin-top: -10px;
 }
 header .zoa .papa {
@@ -22,7 +28,7 @@ header .zoa .papa .milo .mama {
   font-weight: 500;
 }
 header .zoa .papa .logo { /*LOGO*/
-  width: 95px;
+  width: 98px;
   margin: 10px;
 }
 
@@ -74,6 +80,9 @@ main {
   /*nuestros servicios*/
   /*estetica*/
 }
+main .carruselindex {
+  padding-top: 18px;
+}
 main .carousel.slide img {
   width: 100%;
   height: 450px;
@@ -94,13 +103,18 @@ main div .p.index {
   margin-right: 50px;
   margin-top: 15px;
   font-size: 1.5rem;
+  padding: 15px;
   background-color: #b3b792;
+  border-radius: 17px 18px 18px 18px;
+  -webkit-border-radius: 17px 18px 18px 18px;
+  -moz-border-radius: 17px 18px 18px 18px;
 }
 main div .p.index1 {
   font-size: 2rem;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 15px;
+  border-radius: 17px 18px 18px 18px;
 }
 main .h2index {
   font-size: 2rem;
@@ -111,6 +125,9 @@ main .div.servicios.index {
   padding: 30px;
   /*danza*/
   /*entrenamientos*/
+}
+main .div.servicios.index h3 {
+  padding-top: 30px;
 }
 main .div.servicios.index .h3index {
   padding: 30px;
@@ -132,6 +149,7 @@ main .div.servicios.index .contenedor.grid.index {
 main .div.servicios.index .contenedor.grid.index .p.estetica.index {
   grid-area: presentacion;
   font-size: 1.7rem;
+  font-weight: bold;
 }
 main .div.servicios.index .contenedor.grid.index .p.estetica.index1 {
   grid-area: copas;
@@ -177,12 +195,14 @@ main .div.servicios.index .danzaindex .p.danza.index {
 }
 main .div.servicios.index .danzaindex .p.danza.index.tt {
   text-align: center;
+  font-weight: bold;
 }
 main .div.servicios.index .entrenamientoindex {
   background-color: #b3b792;
 }
 main .div.servicios.index .entrenamientoindex .p.entrenamiento.index.tt {
   text-align: center;
+  font-weight: bold;
 }
 main .div.servicios.index .entrenamientoindex .p.entrenamiento.index {
   font-size: 1.6rem;
@@ -194,6 +214,9 @@ main {
   /*Grid COPAS*/
   /*section faciales*/
 }
+main .carruselestetica {
+  padding-top: 18px;
+}
 main h1 {
   margin: 20px;
   padding-top: 10px;
@@ -202,8 +225,14 @@ main h1 {
 }
 main .presentacion {
   text-align: center;
-  margin: 30px;
+  padding: 40px;
   font-size: 1.6rem;
+}
+main .scrolltratamientos {
+  margin-top: 40px;
+  padding-left: 30px;
+  color: #725c3a;
+  font-size: 1.4rem;
 }
 main section {
   margin: 20px;
@@ -338,7 +367,6 @@ main section .contenedor-grid.radio .txtradio {
   grid-area: txt;
 }
 main section .contenedor-grid.radio .imgradio {
-  border-radius: 15px;
   grid-area: img;
   padding: 20px;
   width: 350px;
@@ -579,7 +607,7 @@ main {
 main .bannerdanza {
   max-width: 100%;
   width: 1425px;
-  margin-top: -10px;
+  height: 600px;
 }
 main .presentaciondanza {
   border: #859476 solid 10px;
@@ -689,69 +717,88 @@ main .grid-danza.horarios .elongaciondanza {
   font-size: 2rem;
 }
 
+main .h1entrenamiento {
+  padding-top: 50px;
+}
+main .presentacion.entrenamiento {
+  margin: 50px;
+}
+main h2 {
+  font-weight: bold;
+}
 main .contenedor-grid.entrenamiento {
   display: grid;
   grid-template-areas: "tt1 tt1" "img1 txt1" "tt2 img2" "txt2 img2" "tt3 tt3" "img3 txt3";
-  grid-template-rows: 100px 450px 150px 450px 100px 300px;
-  grid-template-columns: 50% 40%;
+  grid-template-rows: 100px 500px 100px 500px 100px 400px;
+  grid-template-columns: 55% 50%;
   padding: 5%;
+  background-color: #b3b792;
 }
 main .contenedor-grid.entrenamiento .ttentrenamiento {
   grid-area: tt1;
+  font-weight: bolder;
 }
 main .contenedor-grid.entrenamiento .imgentrenamiento {
   grid-area: img1;
-  padding: 5%;
   width: 400px;
-  padding: 5%;
 }
 main .contenedor-grid.entrenamiento .txtentrenamiento {
   grid-area: txt1;
-  text-align: center;
+  font-weight: 400;
+  padding: 2px;
+}
+main .contenedor-grid.entrenamiento .txtentrenamiento .pentrenamiento {
+  font-weight: bold;
 }
 main .contenedor-grid.entrenamiento .ttyoga {
   grid-area: tt2;
+  font-weight: bolder;
 }
 main .contenedor-grid.entrenamiento .imgyoga {
   grid-area: img2;
   width: 300px;
+  margin-left: 50px;
 }
 main .contenedor-grid.entrenamiento .txtyoga {
   grid-area: txt2;
 }
 main .contenedor-grid.entrenamiento .ttpilates {
   grid-area: tt3;
+  font-weight: bolder;
 }
 main .contenedor-grid.entrenamiento .txtpilates {
   grid-area: txt3;
 }
 main .contenedor-grid.entrenamiento .imgpilates {
   grid-area: img3;
-  padding: 5%;
   margin-bottom: 10%;
   width: 300px;
 }
 
-main h1 {
+main .presentacioncontactanos h1 {
   padding: 50px;
 }
-main p {
+main .presentacioncontactanos p {
   text-align: center;
   font-weight: bold;
 }
-main section {
+main .contactanos {
   padding: 30px;
   display: flex;
   align-items: center;
 }
-main section p {
+main .contactanos p {
   text-align: left;
 }
-main section .iconosig {
+main .contactanos img {
+  width: 300px;
+}
+main .contactanos .iconosig {
   padding-right: 35px;
 }
-main img {
-  width: 300px;
+main .pubicacion {
+  text-align: center;
+  font-weight: bold;
 }
 main .ubicacion {
   margin: 50px;
@@ -762,14 +809,15 @@ main .ubicacion {
   -webkit-box-shadow: -2px 10px 16px 10px rgba(114, 92, 58, 0.75);
   -moz-box-shadow: -2px 10px 16px 10px rgba(114, 92, 58, 0.75);
 }
-main div P {
+main .formulario P {
   margin: 20px;
   padding: 30px;
+  font-weight: bold;
 }
-main div .formulario {
+main .formulario .formulario {
   padding: 40px 50px;
 }
-main div .formulario label {
+main .formulario .formulario label {
   padding: 5px;
 }
 

@@ -1,4 +1,14 @@
+@use './variables' as *;
 main {
+    .h1entrenamiento {
+        padding-top: 50px;
+    }
+    .presentacion.entrenamiento {
+        margin: 50px;
+    }
+    h2 {
+      font-weight: bold;  
+    }
     .contenedor-grid.entrenamiento {
         display: grid;
     
@@ -9,42 +19,53 @@ main {
         "txt2 img2"
         "tt3 tt3"
         "img3 txt3";
+        @extend .bordes;
     
-        grid-template-rows: 100px 450px 150px 450px 100px 300px;
-        grid-template-columns: 50% 40%;
+        grid-template-rows: 100px 500px 100px 500px 100px 400px;
+        grid-template-columns: 55% 50%;
         padding: 5%;
+        background-color: $verdeclaro;
+        
         .ttentrenamiento {
             grid-area: tt1;
+            font-weight: bolder;
         }  
         .imgentrenamiento {
             grid-area: img1;
-            padding: 5%;
             width: 400px;
-            padding: 5%;
+            @extend .bordes;
         }
         .txtentrenamiento {
             grid-area: txt1;
-            text-align: center;
+            font-weight: 400;
+            padding: 2px;
+            .pentrenamiento {
+                font-weight: bold;
+            }
         }
         .ttyoga {
             grid-area: tt2;
+            font-weight: bolder;
         }
         .imgyoga {
             grid-area: img2;
             width: 300px;
+            @extend .bordes;
+            margin-left: 50px;
         }
         .txtyoga {
             grid-area: txt2;
         }
         .ttpilates {
             grid-area: tt3;
+            font-weight: bolder;
         }
         .txtpilates {
             grid-area: txt3;
         }
         .imgpilates {
             grid-area: img3;
-            padding: 5%;
+            @extend .bordes;
             margin-bottom: 10%;
             width: 300px;
         }

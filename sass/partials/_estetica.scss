@@ -1,6 +1,10 @@
 /*ESTETICA!!!!*/
 /*GRILLAS DE ESTETICA*/
+@use './variables' as *;
 main {
+    .carruselestetica {
+        padding-top: 18px;
+    }
     h1 {
         margin: 20px;
         padding-top: 10px;
@@ -9,10 +13,16 @@ main {
     }
     .presentacion {
         text-align: center;
-        margin: 30px;
+        padding: 40px;
         font-size: 1.6rem;
     }
     /*Grid COPAS*/
+    .scrolltratamientos {
+        margin-top: 40px;
+        padding-left: 30px;
+        color: $marron;
+        font-size: 1.4rem;
+    }
     section {
         p {
             padding: 5px;
@@ -29,6 +39,7 @@ main {
             grid-template-rows: 100px 80px 380px 250px ;
             background-color: #b3b792;
             padding-left: 20px;
+            @extend .bordes;
             h4 {
                 font-weight: bolder;
             }
@@ -68,6 +79,7 @@ main {
             grid-template-columns: 30% 40% 30%;
             grid-template-rows: 100px 100px 330px 180px;
             padding: 10px;
+            
             h4 {
                 font-weight: bolder;
             }
@@ -111,6 +123,7 @@ main {
             "img ben info" ;
             grid-template-rows: 100px 130px 380px 200px;
             grid-template-columns: 30% 43% 25%;
+            @extend .bordes;
 
             background-color: #b3b792;
             width: 100%;
@@ -167,12 +180,12 @@ main {
                 grid-area: txt;
             }
             .imgradio { 
-                border-radius: 15px;
+                
                 grid-area: img;
                 padding: 20px;
                 width: 350px;
                 padding-top: 70px;
-                
+                @extend .bordes;
             }
             .benradio {
                 grid-area: ben;
@@ -195,7 +208,7 @@ main {
             "info1 info1 info2 info2";
             grid-template-columns: 35% 15% 15% 35%;
             grid-template-rows: 50px 320px 360px 350px;
-
+            @extend .bordes;
             background-color: #b3b792;
             align-items: center;
             padding: 20px;
@@ -294,6 +307,7 @@ main {
             h3 {
                 font-weight: bold;
             }
+            @extend .bordes;
         }
         .puntadiamante {
             h3 {
@@ -319,6 +333,7 @@ main {
             background-color: #b3b792;
             padding: 10px;
             margin: 15px;
+            @extend .bordes;
             p {
                 margin: 30px;
             }
@@ -332,6 +347,7 @@ main {
         }
 
         .pestañasycejas {
+            @extend .bordes;
             h3 {
                 font-weight: bold;
             }
