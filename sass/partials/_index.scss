@@ -32,9 +32,7 @@ main {
             font-size: 1.5rem;
             padding: 15px;
             background-color: $verdeclaro;
-            border-radius: 17px 18px 18px 18px;
-            -webkit-border-radius: 17px 18px 18px 18px;
-            -moz-border-radius: 17px 18px 18px 18px;
+            @extend .bordes;
         }
         .p.index1 {
             font-size: 2rem;
