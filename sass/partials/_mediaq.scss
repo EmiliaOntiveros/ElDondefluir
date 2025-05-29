@@ -314,7 +314,7 @@
             ". info2"
             "diseño diseño";
             grid-template-columns: 45% 45%;
-            grid-template-rows: 120px 450px 120px 450px 120px 450px repeat(2*100px) 400px;
+            grid-template-rows: 120px 450px 120px 450px 120px 450px repeat(2*100px) 200px;
            
             padding: 0px;
             margin: 0px;
@@ -608,3 +608,612 @@
  
 }
 
+//RESPONSIVE TABLET 
+@media (min-width:481px) and (max-width: 769px) {
+    body {
+        width: 100%;
+        //HEADER
+        header {
+            .zoa { //correccion de header en mobile
+                z-index: 100;
+                .papa {
+                    height: 120px;
+                    .button {
+                        border-color: $verdeoscuro;
+                        border: 3px solid #859476;
+                    }
+                    .logo { /*LOGO*/
+                        height: 100px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        border-radius: 200px 200px 200px 200px;
+                        -webkit-border-radius: 200px 200px 200px 200px;
+                        -moz-border-radius: 200px 200px 200px 200px;
+                        background: #158cba;
+                        border: 3px solid #859476;
+                        margin-bottom: 5px;
+                    }
+                    .milo {
+                        background-color:#b3b792;
+                        .mama {
+                            display: flex;
+                            flex-direction: column;
+                            height: 300px;
+                            justify-content:initial;
+                            height: 100%;
+                            border-radius: 8px 8px 8px 8px;
+                            -webkit-border-radius: 8px 8px 8px 8px;
+                            -moz-border-radius: 8px 8px 8px 8px;
+                            border: 3px solid #859476;
+                            a {
+                                padding: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }  
+        //final de header
+        main {
+            .carruselindex {
+                padding-top: 0%;
+            }
+            .quienessomos {
+                font-size: 2.5rem;
+                max-width: 100%;
+                margin: 80px 10px;
+            }
+            div {
+        
+                .p.index {
+                    margin: 15px 30px;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    padding: 10px;
+                }
+                .p.index1 {
+                    font-size: 1.5rem;
+                    margin: 30px 20px;
+                    text-align: center;
+                }
+            }
+            .h2index {
+                margin: 10px;
+                padding-top: 80px;
+            }
+            .div.servicios.index {
+                .contenedor.grid.index {
+                    grid-template-areas: 
+                    "presentacion presentacion"
+                    "copas vacum" 
+                    "depi radio" 
+                    "electro masajes"
+                    "punta masajes" 
+                    "manicura lifting";
+                    grid-template-rows: 120px 100px 100px 100px 100px 100px;
+                    grid-template-columns: 50% 50%;
+                    padding: 10px;
+                    text-align: center;
+                    .p.estetica.index {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        max-width: 100%;
+                    }
+                    .p.estetica.index1 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index2 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index3 {
+                        grid-area: depi;
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index4 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index5 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index6 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index7 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index8 {
+                        font-size: 1.3rem;
+                    }
+                    .p.estetica.index9 {
+                        font-size: 1.3rem;
+                    }
+                }
+                .danzaindex {
+                    .p.danza.index {
+                        font-size: 1.5rem;
+                        padding-top: 15px;
+                    }
+                }
+                .entrenamientoindex {
+                    .p.entrenamiento.index {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            //Finalizacion de INDEX
+            //ESTÉTICA
+            section {
+                p {
+                    margin: 0px;
+                }
+                margin: 10px;
+                .contenedor-grid.copas {
+                    grid-template-areas: 
+                    "titulo"
+                    "beneficios"
+                    "adicionales";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 80px 260px 130px;
+                    .txtcopas {
+                        display: none;
+                    }
+                    .concopas {
+                        display: none;
+                    }
+                    .imgcopas {
+                        display: none;
+                    }
+                } 
+                .contenedor-grid.vacum {
+                    grid-template-areas: 
+                    "ttvacum"
+                    "txtvacum"
+                    "ben-vacum";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 120px 270px;
+                    .convacum {
+                        display: none;
+                    }
+                    .infovacum {
+                        display: none;
+                    }
+                    .imgvacum {
+                        display: none;
+                    }
+                }
+                .contenedor-grid.electro {
+                    grid-template-areas:
+                    "tt"
+                    "ben"
+                    "con";
+                    grid-template-rows: 80px 300px 200px;
+                    grid-template-columns: 1fr;
+                    .txtelectro {
+                    display: none;
+                    }
+                    .conelectro {
+                        display: none;
+                    }
+                    .infoelectro {
+                        display: none;
+                    }
+                    .imgelectro {
+                        display: none;                   
+                    }
+                }
+                .contenedor-grid.radio {
+                    grid-template-areas: 
+                    "tt"
+                    "txt "
+                    "ben"
+                    "info";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 140px 280px 120px;
+                    .imgradio { 
+                        display: none;
+                    }
+                    .conradio { 
+                        display: none;
+                    }
+                }
+                .contenedor-grid.depi {
+                    grid-template-areas:
+                    "tt" 
+                    "ben"
+                    "info1";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 200px 200px;
+                    .txt1depi {
+                        display: none;
+                    }
+                    .txt2depi {
+                        display: none;
+                    }
+                    .condepi {
+                        display: none;
+                    }
+                    .info2depi {
+                        display: none;
+                    }
+                    .imgdepi {
+                        display: none;
+                    }
+                }
+                .contenedor-grid.masajes {
+                    grid-template-areas: 
+                    "tt"
+                    "ben"
+                    "tipos";
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 80px 270px 350px;
+                    .txtmasajes {
+                        display: none;
+                    }
+                    .imgmasajes {
+                        display: none;
+                    }
+                    
+                }
+            }   
+            .sect-faciales {
+                margin: 20px;
+                    p {
+                        margin: 0;
+                    }
+                    .radiofacial {
+                        background-color: #b3b792;
+                        padding: 15px;
+                        margin: 0px;
+                        p {
+                            margin: 0px;
+                        }  
+                    }
+                .puntadiamante {
+                    
+                    padding: 0px;
+                    margin: 15px;
+                    p {
+                        margin: 5px;
+                    }
+                    img {
+                        display: flex;
+                        margin-left: 25%;
+                        width: 250px;
+                    }
+                }   
+                .lifting {
+                    padding: 10px;
+                    margin: 15px;
+                    
+                    p {
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                    img {
+                        width: 200px; 
+                        padding: 15px;
+                        margin-left: 25%;
+                    }
+                }
+            }
+            .sect-manosypies {
+        p {
+            padding: 5px;
+        }
+        padding: 20px;
+        padding-top: 5px;
+        margin: 20px;
+        h2 {
+            font-weight: bold;
+        }
+        .contenedor-grid.uñas {
+            display: grid;
+            grid-template-areas: 
+            "txt txt"
+            "ttsemi imgsemi"
+            "txtsemi  imgsemi"
+            "ttcapping imgcapping"  
+            "txtcapping imgcapping"
+            "ttesculpidas imgesculpidas"
+            "txtesculpidas imgesculpidas"
+            ". info1"
+            ". info2"
+            "diseño diseño";
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 200px 450px 120px 450px 120px 450px repeat(2*100px) 200px;
+           
+            
+            margin-left: 50px;
+            .imgsemi {
+                grid-area: imgsemi;
+                width: 230px;
+                border-radius: 15px;
+                
+            }
+            .imgcapping {
+                grid-area: imgcapping;
+                width: 230px;
+                border-radius: 15px;
+            }
+
+            .imgesculpidas {
+                width: 230px;
+                border-radius: 15px;
+            }
+            .info1esculpidas {
+                grid-area: info1;
+                padding: 0px;
+            }
+            .info2esculpidas {
+                grid-area: info2;
+                padding: 0px;
+            }
+            .explicaciondiseños {
+                grid-area: diseño;
+                padding-top: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+        }
+    }
+            
+            //Finalizacion de ESTETICA
+
+            //DANZA
+            .bannerdanza {
+                height: 300px;
+            }
+            .presentaciondanza {
+                margin: 30px;
+                padding: 10px;
+                font-size: 1.3rem;
+            }
+            .videodanza {
+                margin: 15px;
+                .iframedanza {
+                    width: 380px;
+                    margin: 5px;
+                }
+            }    
+            p {
+                font-size: 1.1rem;
+            }
+            .grid-danza.h2 { 
+                grid-template-areas: 
+                "niveles filosofia"
+                "p1 p2";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 100px 250px;
+                padding-top: 30px;
+                margin: 10px;
+                padding: 20px;
+                h2 {
+                    font-weight: bolder;
+                    font-size: 1.5rem;
+                }
+                
+            }
+            /*grilla de horarios danza*/
+            .grid-danza.horarios {
+                grid-template-areas: 
+                "categoria horarios horarios"
+                "infantil horarioinfantil ejercicios"
+                "juvenil horariojuvenil ejercicios"
+                "adultos horarioadultos practicas"
+                "adultosmayores horariomayores elongacion";
+                grid-template-columns: 30% 40% 30%;
+                grid-template-columns: 120px repeat(4*100px);
+                padding: 10px;
+                margin: 10px;
+                .ttdanza {
+                    grid-area: categoria;
+                    font-weight: bolder;
+                    padding: 15px;
+                    font-size: 1.6rem;
+                }
+                .horarios {
+                    padding: 10px;
+                    font-size: 1.6rem;
+                }
+                .infantil {
+                    font-size: 1.5rem;
+                }
+                .horarioinfant {
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                .ejerciciosdanza {
+                    font-size: 1.3rem;
+                }
+                .juvenil {
+                    font-size: 1.5rem;
+                }
+                .horariojuvenil {
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                .adultos {
+                    font-size: 1.5rem;
+                }
+                .horarioadultos {
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+                .practicasdanza {
+                    grid-area: practicas;
+                    font-size: 1.3rem;
+
+                }
+                .adultosmayores {
+                    font-size: 1.5rem;
+                    
+                }
+                .horariosmayores {
+                    text-align: center;
+                    font-size: 1.2rem;
+
+                }
+                .elongaciondanza {
+                    font-size: 1.3rem;
+
+                }
+            }
+            //Finalización de DANZA
+            //ENTRENAMIENTO PERSONALIZADO
+            .presentacion.entrenamiento {
+                margin: 10px;
+            }
+            .contenedor-grid.entrenamiento {
+                display: grid;
+            
+                grid-template-areas: 
+                "tt1"
+                "img1"
+                "txt1"
+                "tt2"
+                "img2"
+                "txt2" 
+                "tt3" 
+                "img3" 
+                "txt3";
+                grid-template-rows: 70px 210px 370px 70px 370px 440px 70px 260px 420px;
+                grid-template-columns: 100%;
+                padding: 10px;
+                p {
+                    margin: 5px;
+                    font-size: 1rem;
+                }
+                
+                .ttentrenamiento {
+                    grid-area: tt1;
+                    font-weight: bolder;
+                }  
+                .imgentrenamiento {
+                    grid-area: img1;
+                    width: 200px;
+                    margin-left: 70px;
+
+                }
+                .txtentrenamiento {
+                    grid-area: txt1;
+                    font-weight: 400;
+                    padding: 2px;
+                    .pentrenamiento {
+                        font-weight: bold;
+                    }
+                }
+                .ttyoga {
+                    grid-area: tt2;
+                    font-weight: bolder;
+                }
+                .imgyoga {
+                    grid-area: img2;
+                    width: 200px;
+                    margin-left: 70px;
+                }
+                .txtyoga {
+                    grid-area: txt2;
+                }
+                .ttpilates {
+                    grid-area: tt3;
+                    font-weight: bolder;
+                }
+                .txtpilates {
+                    grid-area: txt3;
+                }
+                .imgpilates {
+                    grid-area: img3;
+                    margin-bottom: 10%;
+                    width: 200px;
+                    margin-left: 70px;
+                }
+            }
+            //Finalización de entrenamiento
+            //CONTACTOS
+             .contactanos {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    text-align: center;
+                }
+                img {
+                    width: 300px;
+                
+                }
+                .iconosig {
+                    padding-right: 35px;
+                }
+            }
+            .ubicacion {
+                margin: 10px;
+                position: relative;
+                top: auto;
+                left: 20px;
+                width: 350px;
+            }
+            .formulario {
+                p{
+                    margin: 30px;
+                    padding: 30px;
+                    font-weight: bold;
+                }
+            
+                .formulario { 
+                    padding: 40px 30px;
+                    label {
+                        padding: 5px;
+                    }
+                }    
+            }
+            
+        }
+    
+        //FOOTER
+        footer {
+            .banner.footer {
+                background-image: url('../../medios/logoblanco\ -\ Editado.png');
+                height: 200px;
+                max-width: 100%;
+               .contenedor-flex.footer { //instagram, whatsapp y ubi
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        display: none;
+                    }
+                    
+                    .whatsapp {
+                        margin: 40px 0px 0px 0px;
+                        width: 210px;
+                       
+                        
+                    }
+                    .instagram {
+                        margin: 50px 0px;
+                        margin-bottom: auto;
+                        width: 180px;
+                        
+                    }
+                    .ubicacion {
+                        margin: 45px 20px;
+                        width: 100px;
+                        margin-bottom: auto;
+                      
+                    }
+                }
+        
+        
+        
+            }
+    
+        }
+ 
+    }
+ 
+
+}
