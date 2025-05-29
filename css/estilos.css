@@ -435,7 +435,7 @@ main section .contenedor-grid.masajes {
   display: grid;
   grid-template-areas: "tt tt tt" "txt txt img" "ben ben img" "tipos tipos tipos";
   grid-template-columns: 25% 40% 35%;
-  grid-template-rows: 100px 180px 450px 440px;
+  grid-template-rows: 100px 180px 470px 440px;
   padding: 20px;
 }
 main section .contenedor-grid.masajes h4 {
@@ -1131,7 +1131,7 @@ main .formulario .formulario label {
     margin: 15px;
   }
   body main .videodanza .iframedanza {
-    width: 380px;
+    width: 340px;
     margin: 5px;
   }
   body main p {
@@ -1280,11 +1280,11 @@ main .formulario .formulario label {
     position: relative;
     top: auto;
     left: 20px;
-    width: 350px;
+    width: 330px;
   }
   body main .formulario p {
     margin: 30px;
-    padding: 30px;
+    padding: 40px;
     font-weight: bold;
   }
   body main .formulario .formulario {
