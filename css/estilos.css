@@ -937,6 +937,182 @@ main .formulario .formulario label {
   body main .div.servicios.index .entrenamientoindex .p.entrenamiento.index {
     font-size: 1.4rem;
   }
+  body main section {
+    margin: 10px;
+  }
+  body main section p {
+    margin: 0px;
+  }
+  body main section .contenedor-grid.copas {
+    grid-template-areas: "titulo" "beneficios" "adicionales";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 270px 130px;
+  }
+  body main section .contenedor-grid.copas .txtcopas {
+    display: none;
+  }
+  body main section .contenedor-grid.copas .concopas {
+    display: none;
+  }
+  body main section .contenedor-grid.copas .imgcopas {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum {
+    grid-template-areas: "ttvacum" "txtvacum" "ben-vacum";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 150px 270px;
+  }
+  body main section .contenedor-grid.vacum .convacum {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum .infovacum {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum .imgvacum {
+    display: none;
+  }
+  body main section .contenedor-grid.electro {
+    grid-template-areas: "tt" "ben" "con";
+    grid-template-rows: 80px 420px 200px;
+    grid-template-columns: 1fr;
+  }
+  body main section .contenedor-grid.electro .txtelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .conelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .infoelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .imgelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.radio {
+    grid-template-areas: "tt" "txt " "ben" "info";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 230px 370px 130px;
+  }
+  body main section .contenedor-grid.radio .imgradio {
+    display: none;
+  }
+  body main section .contenedor-grid.radio .conradio {
+    display: none;
+  }
+  body main section .contenedor-grid.depi {
+    grid-template-areas: "tt" "ben" "info1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 250px 300px;
+  }
+  body main section .contenedor-grid.depi .txt1depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .txt2depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .condepi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .info2depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .imgdepi {
+    display: none;
+  }
+  body main section .contenedor-grid.masajes {
+    grid-template-areas: "tt" "ben" "tipos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 320px 510px;
+  }
+  body main section .contenedor-grid.masajes .txtmasajes {
+    display: none;
+  }
+  body main section .contenedor-grid.masajes .imgmasajes {
+    display: none;
+  }
+  body main .sect-faciales {
+    margin: 20px;
+  }
+  body main .sect-faciales p {
+    margin: 0;
+  }
+  body main .sect-faciales .radiofacial {
+    background-color: #b3b792;
+    padding: 15px;
+    margin: 0px;
+  }
+  body main .sect-faciales .radiofacial p {
+    margin: 0px;
+  }
+  body main .sect-faciales .puntadiamante {
+    padding: 0px;
+    margin: 15px;
+  }
+  body main .sect-faciales .puntadiamante p {
+    margin: 5px;
+  }
+  body main .sect-faciales .puntadiamante img {
+    display: flex;
+    margin: auto;
+    width: 250px;
+  }
+  body main .sect-faciales .lifting {
+    padding: 10px;
+    margin: 15px;
+  }
+  body main .sect-faciales .lifting p {
+    margin: 0px;
+    padding: 0px;
+  }
+  body main .sect-faciales .lifting img {
+    width: 200px;
+    margin: 30px 35px;
+  }
+  body main .sect-manosypies {
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+  }
+  body main .sect-manosypies p {
+    padding: 5px;
+  }
+  body main .sect-manosypies h2 {
+    font-weight: bold;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas {
+    display: grid;
+    grid-template-areas: "txt txt" "ttsemi imgsemi" "txtsemi  imgsemi" "ttcapping imgcapping" "txtcapping imgcapping" "ttesculpidas imgesculpidas" "txtesculpidas imgesculpidas" ". info1" ". info2" "diseño diseño";
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 120px 450px 120px 450px 120px 450px repeat(200px) 400px;
+    padding: 0px;
+    margin: 0px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgsemi {
+    grid-area: imgsemi;
+    width: 150px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgcapping {
+    grid-area: imgcapping;
+    width: 150px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgesculpidas {
+    width: 150px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .info1esculpidas {
+    grid-area: info1;
+    padding: 0px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .info2esculpidas {
+    grid-area: info2;
+    padding: 0px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .explicaciondiseños {
+    grid-area: diseño;
+    padding-top: 30px;
+  }
   body main .bannerdanza {
     height: 300px;
   }
