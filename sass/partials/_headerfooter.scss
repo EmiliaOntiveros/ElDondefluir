@@ -9,7 +9,7 @@ header {
             width: 100%;
             background-color: #b3b792;
             font-size: 25px;
-            height: 90px;
+            height: 100px;
             .milo {
                 width: 100%;
                 .mama {
@@ -26,6 +26,11 @@ header {
             .logo { /*LOGO*/
                 width: 98px;
                 margin: 10px;
+                border-radius: 200px 200px 200px 200px;
+                -webkit-border-radius: 200px 200px 200px 200px;
+                -moz-border-radius: 200px 200px 200px 200px;
+                background: #158cba;
+                border: 3px solid #859476;
             }
         }
     }

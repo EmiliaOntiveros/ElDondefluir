@@ -13,7 +13,7 @@ header .zoa .papa {
   width: 100%;
   background-color: #b3b792;
   font-size: 25px;
-  height: 90px;
+  height: 100px;
 }
 header .zoa .papa .milo {
   width: 100%;
@@ -30,6 +30,11 @@ header .zoa .papa .milo .mama {
 header .zoa .papa .logo { /*LOGO*/
   width: 98px;
   margin: 10px;
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  background: #158cba;
+  border: 3px solid #859476;
 }
 
 footer .banner.footer {
@@ -81,7 +86,7 @@ main {
   /*estetica*/
 }
 main .carruselindex {
-  padding-top: 18px;
+  padding-top: 28px;
 }
 main .carousel.slide img {
   width: 100%;
@@ -212,7 +217,7 @@ main {
   /*section faciales*/
 }
 main .carruselestetica {
-  padding-top: 18px;
+  padding-top: 28px;
 }
 main h1 {
   margin: 20px;
@@ -618,7 +623,8 @@ main .videodanza {
 }
 main .videodanza .iframedanza {
   width: 800px;
-  margin: 60px;
+  margin-top: 60px;
+  margin-left: 20%;
 }
 main p {
   font-size: 1.4rem;
@@ -1316,7 +1322,7 @@ main .formulario .formulario label {
     display: none;
   }
 }
-@media (min-width: 481px) and (max-width: 769px) {
+@media (min-width: 481px) and (max-width: 768px) {
   body {
     width: 100%;
   }
@@ -1622,7 +1628,500 @@ main .formulario .formulario label {
   }
   body main .videodanza .iframedanza {
     width: 380px;
+    margin-left: 20%;
+  }
+  body main p {
+    font-size: 1.1rem;
+  }
+  body main .grid-danza.h2 {
+    grid-template-areas: "niveles filosofia" "p1 p2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 250px;
+    padding-top: 30px;
+    margin: 10px;
+    padding: 20px;
+  }
+  body main .grid-danza.h2 h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  body main .grid-danza.horarios {
+    grid-template-areas: "categoria horarios horarios" "infantil horarioinfantil ejercicios" "juvenil horariojuvenil ejercicios" "adultos horarioadultos practicas" "adultosmayores horariomayores elongacion";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 120px repeat(400px);
+    padding: 10px;
+    margin: 10px;
+  }
+  body main .grid-danza.horarios .ttdanza {
+    grid-area: categoria;
+    font-weight: bolder;
+    padding: 15px;
+    font-size: 1.6rem;
+  }
+  body main .grid-danza.horarios .horarios {
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+  body main .grid-danza.horarios .infantil {
+    font-size: 1.5rem;
+  }
+  body main .grid-danza.horarios .horarioinfant {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body main .grid-danza.horarios .ejerciciosdanza {
+    font-size: 1.3rem;
+  }
+  body main .grid-danza.horarios .juvenil {
+    font-size: 1.5rem;
+  }
+  body main .grid-danza.horarios .horariojuvenil {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body main .grid-danza.horarios .adultos {
+    font-size: 1.5rem;
+  }
+  body main .grid-danza.horarios .horarioadultos {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body main .grid-danza.horarios .practicasdanza {
+    grid-area: practicas;
+    font-size: 1.3rem;
+  }
+  body main .grid-danza.horarios .adultosmayores {
+    font-size: 1.5rem;
+  }
+  body main .grid-danza.horarios .horariosmayores {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body main .grid-danza.horarios .elongaciondanza {
+    font-size: 1.3rem;
+  }
+  body main .presentacion.entrenamiento {
+    margin: 10px;
+  }
+  body main .contenedor-grid.entrenamiento {
+    display: grid;
+    grid-template-areas: "tt1" "img1" "txt1" "tt2" "img2" "txt2" "tt3" "img3" "txt3";
+    grid-template-rows: 70px 210px 370px 70px 370px 440px 70px 260px 420px;
+    grid-template-columns: 100%;
+    padding: 10px;
+  }
+  body main .contenedor-grid.entrenamiento p {
     margin: 5px;
+    font-size: 1rem;
+  }
+  body main .contenedor-grid.entrenamiento .ttentrenamiento {
+    grid-area: tt1;
+    font-weight: bolder;
+  }
+  body main .contenedor-grid.entrenamiento .imgentrenamiento {
+    grid-area: img1;
+    width: 200px;
+    margin-left: 70px;
+  }
+  body main .contenedor-grid.entrenamiento .txtentrenamiento {
+    grid-area: txt1;
+    font-weight: 400;
+    padding: 2px;
+  }
+  body main .contenedor-grid.entrenamiento .txtentrenamiento .pentrenamiento {
+    font-weight: bold;
+  }
+  body main .contenedor-grid.entrenamiento .ttyoga {
+    grid-area: tt2;
+    font-weight: bolder;
+  }
+  body main .contenedor-grid.entrenamiento .imgyoga {
+    grid-area: img2;
+    width: 200px;
+    margin-left: 70px;
+  }
+  body main .contenedor-grid.entrenamiento .txtyoga {
+    grid-area: txt2;
+  }
+  body main .contenedor-grid.entrenamiento .ttpilates {
+    grid-area: tt3;
+    font-weight: bolder;
+  }
+  body main .contenedor-grid.entrenamiento .txtpilates {
+    grid-area: txt3;
+  }
+  body main .contenedor-grid.entrenamiento .imgpilates {
+    grid-area: img3;
+    margin-bottom: 10%;
+    width: 200px;
+    margin-left: 70px;
+  }
+  body main .contactanos {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .contactanos p {
+    text-align: center;
+  }
+  body main .contactanos img {
+    width: 300px;
+  }
+  body main .contactanos .iconosig {
+    padding-right: 35px;
+  }
+  body main .ubicacion {
+    margin: 10px;
+    position: relative;
+    top: auto;
+    left: 20px;
+    width: 350px;
+  }
+  body main .formulario p {
+    margin: 30px;
+    padding: 30px;
+    font-weight: bold;
+  }
+  body main .formulario .formulario {
+    padding: 40px 30px;
+  }
+  body main .formulario .formulario label {
+    padding: 5px;
+  }
+  body footer .banner.footer {
+    background-image: url("../../medios/logoblanco - Editado.png");
+    height: 200px;
+    max-width: 100%;
+  }
+  body footer .banner.footer .contenedor-flex.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body footer .banner.footer .contenedor-flex.footer p {
+    display: none;
+  }
+  body footer .banner.footer .contenedor-flex.footer .whatsapp {
+    margin: 40px 0px 0px 0px;
+    width: 210px;
+  }
+  body footer .banner.footer .contenedor-flex.footer .instagram {
+    margin: 50px 0px;
+    margin-bottom: auto;
+    width: 180px;
+  }
+  body footer .banner.footer .contenedor-flex.footer .ubicacion {
+    margin: 45px 20px;
+    width: 100px;
+    margin-bottom: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+  body header .zoa {
+    z-index: 100;
+  }
+  body header .zoa .papa {
+    height: 120px;
+  }
+  body header .zoa .papa .button {
+    border-color: #859476;
+    border: 3px solid #859476;
+  }
+  body header .zoa .papa .logo { /*LOGO*/
+    height: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    background: #158cba;
+    border: 3px solid #859476;
+    margin-bottom: 5px;
+  }
+  body header .zoa .papa .milo {
+    background-color: #b3b792;
+  }
+  body header .zoa .papa .milo .mama {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: initial;
+    height: 100%;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border: 3px solid #859476;
+  }
+  body header .zoa .papa .milo .mama a {
+    padding: 10px;
+  }
+  body main {
+    /*grilla de horarios danza*/
+  }
+  body main .carruselindex {
+    padding-top: 0%;
+  }
+  body main .quienessomos {
+    font-size: 2.5rem;
+    max-width: 100%;
+    margin: 80px 10px;
+  }
+  body main div .p.index {
+    margin: 15px 30px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  body main div .p.index1 {
+    font-size: 1.5rem;
+    margin: 30px 20px;
+    text-align: center;
+  }
+  body main .h2index {
+    margin: 10px;
+    padding-top: 80px;
+  }
+  body main .div.servicios.index .contenedor.grid.index {
+    grid-template-areas: "presentacion presentacion" "copas vacum" "depi radio" "electro masajes" "punta masajes" "manicura lifting";
+    grid-template-rows: 120px 100px 100px 100px 100px 100px;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    text-align: center;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index1 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index2 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index3 {
+    grid-area: depi;
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index4 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index5 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index6 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index7 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index8 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .contenedor.grid.index .p.estetica.index9 {
+    font-size: 1.3rem;
+  }
+  body main .div.servicios.index .danzaindex .p.danza.index {
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  body main .div.servicios.index .entrenamientoindex .p.entrenamiento.index {
+    font-size: 1.4rem;
+  }
+  body main section {
+    margin: 10px;
+  }
+  body main section p {
+    margin: 0px;
+  }
+  body main section .contenedor-grid.copas {
+    grid-template-areas: "titulo" "beneficios" "adicionales";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 260px 130px;
+  }
+  body main section .contenedor-grid.copas .txtcopas {
+    display: none;
+  }
+  body main section .contenedor-grid.copas .concopas {
+    display: none;
+  }
+  body main section .contenedor-grid.copas .imgcopas {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum {
+    grid-template-areas: "ttvacum" "txtvacum" "ben-vacum";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 120px 270px;
+  }
+  body main section .contenedor-grid.vacum .convacum {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum .infovacum {
+    display: none;
+  }
+  body main section .contenedor-grid.vacum .imgvacum {
+    display: none;
+  }
+  body main section .contenedor-grid.electro {
+    grid-template-areas: "tt" "ben" "con";
+    grid-template-rows: 80px 300px 200px;
+    grid-template-columns: 1fr;
+  }
+  body main section .contenedor-grid.electro .txtelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .conelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .infoelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.electro .imgelectro {
+    display: none;
+  }
+  body main section .contenedor-grid.radio {
+    grid-template-areas: "tt" "txt " "ben" "info";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 140px 280px 120px;
+  }
+  body main section .contenedor-grid.radio .imgradio {
+    display: none;
+  }
+  body main section .contenedor-grid.radio .conradio {
+    display: none;
+  }
+  body main section .contenedor-grid.depi {
+    grid-template-areas: "tt" "ben" "info1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 200px 200px;
+  }
+  body main section .contenedor-grid.depi .txt1depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .txt2depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .condepi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .info2depi {
+    display: none;
+  }
+  body main section .contenedor-grid.depi .imgdepi {
+    display: none;
+  }
+  body main section .contenedor-grid.masajes {
+    grid-template-areas: "tt" "ben" "tipos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 270px 350px;
+  }
+  body main section .contenedor-grid.masajes .txtmasajes {
+    display: none;
+  }
+  body main section .contenedor-grid.masajes .imgmasajes {
+    display: none;
+  }
+  body main .sect-faciales {
+    margin: 20px;
+  }
+  body main .sect-faciales p {
+    margin: 0;
+  }
+  body main .sect-faciales .radiofacial {
+    background-color: #b3b792;
+    padding: 15px;
+    margin: 0px;
+  }
+  body main .sect-faciales .radiofacial p {
+    margin: 0px;
+  }
+  body main .sect-faciales .puntadiamante {
+    padding: 0px;
+    margin: 15px;
+  }
+  body main .sect-faciales .puntadiamante p {
+    margin: 5px;
+  }
+  body main .sect-faciales .puntadiamante img {
+    display: flex;
+    margin-left: 25%;
+    width: 250px;
+  }
+  body main .sect-faciales .lifting {
+    padding: 10px;
+    margin: 15px;
+  }
+  body main .sect-faciales .lifting p {
+    margin: 0px;
+    padding: 0px;
+  }
+  body main .sect-faciales .lifting img {
+    width: 200px;
+    padding: 15px;
+    margin-left: 25%;
+  }
+  body main .sect-manosypies {
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+  }
+  body main .sect-manosypies p {
+    padding: 5px;
+  }
+  body main .sect-manosypies h2 {
+    font-weight: bold;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas {
+    display: grid;
+    grid-template-areas: "txt txt" "ttsemi imgsemi" "txtsemi  imgsemi" "ttcapping imgcapping" "txtcapping imgcapping" "ttesculpidas imgesculpidas" "txtesculpidas imgesculpidas" ". info1" ". info2" "diseño diseño";
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 200px 450px 120px 450px 120px 450px repeat(200px) 200px;
+    margin-left: 50px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgsemi {
+    grid-area: imgsemi;
+    width: 230px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgcapping {
+    grid-area: imgcapping;
+    width: 230px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .imgesculpidas {
+    width: 230px;
+    border-radius: 15px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .info1esculpidas {
+    grid-area: info1;
+    padding: 0px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .info2esculpidas {
+    grid-area: info2;
+    padding: 0px;
+  }
+  body main .sect-manosypies .contenedor-grid.uñas .explicaciondiseños {
+    grid-area: diseño;
+    padding-top: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  body main .bannerdanza {
+    height: 500px;
+  }
+  body main .presentaciondanza {
+    margin: 30px;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  body main .videodanza {
+    margin: 15px;
+  }
+  body main .videodanza .iframedanza {
+    width: 380px;
+    margin-left: 20%;
   }
   body main p {
     font-size: 1.1rem;
